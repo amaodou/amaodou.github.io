@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"amaodou.gitee.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="amaodou&#39;s lab">
+<meta property="og:url" content="http://amaodou.gitee.io/index.html">
+<meta property="og:site_name" content="amaodou&#39;s lab">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="amaodou">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://amaodou.gitee.io/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>amaodou's lab</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">amaodou's lab</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://amaodou.gitee.io/2020/05/09/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="amaodou">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="amaodou's lab">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/09/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-09 20:49:24" itemprop="dateCreated datePublished" datetime="2020-05-09T20:49:24+08:00">2020-05-09</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://amaodou.gitee.io/2020/05/09/git%E4%BD%BF%E7%94%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="amaodou">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="amaodou's lab">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/09/git%E4%BD%BF%E7%94%A8/" class="post-title-link" itemprop="url">Git使用</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-09 18:53:12 / 修改时间：20:49:24" itemprop="dateCreated datePublished" datetime="2020-05-09T18:53:12+08:00">2020-05-09</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>本文简单介绍一下 Git 配置、使用、以及多个远程仓库同步</p>
+<h3 id="Git-配置"><a href="#Git-配置" class="headerlink" title="Git 配置"></a>Git 配置</h3><ul>
+<li>配置用户信息</li>
+</ul>
+<p><em>添加<code>--global</code>参数进行全局配置</em></p>
+<p>Git 每次提交都会使用这些信息，并且记录到提交中</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"amaodou"</span></span><br><span class="line">git config --global user.email <span class="string">"amaodou@gmail.com"</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Git 换行符转换</li>
+</ul>
+<p>不同平台的换行符不一样，为了解决这个问题，Git 可以配置换行自动转换</p>
+<p>Windows 平台的换行符是 CRLF，Linux 平台的换行符是 LF</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 提交时换行符转换成 LF，检出时转换成 CRLF （一般 Windowns 平台配置）</span></span><br><span class="line">git config --global core.autocrlf <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交时换行符转换成 LF，检出时不处理</span></span><br><span class="line">git config --global core.autocrlf input</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交和检出都不处理</span></span><br><span class="line">git config --global core.autocrlf <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Git 别名</li>
+</ul>
+<p>添加如下配置后，可以使用<code>git co</code>代表<code>git checkout</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global alias.co checkout</span><br><span class="line">git config --global alias.br branch</span><br><span class="line">git config --global alias.ci commit</span><br><span class="line">git config --global alias.st status</span><br></pre></td></tr></table></figure>
+
+<p>也可以通过设置别名定义 log 输出格式</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global alias.lg <span class="string">"log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit --date=format:'%Y-%m-%d %H:%M:%S'"</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Git-操作"><a href="#Git-操作" class="headerlink" title="Git 操作"></a>Git 操作</h3><ul>
+<li>初始化 Git 仓库</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>将变更添加到缓冲区</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>提交缓冲区的变更</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">"说明本次提交内容"</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>拉取远程仓库</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>推送到远程仓库</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+<p>如果本地仓库还没有跟远程仓库关联，需要先做关联再推送</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:amaodou/test.git  <span class="comment"># 关联远程仓库</span></span><br><span class="line">git push -u origin master  <span class="comment"># 推送到远程 master 分支</span></span><br></pre></td></tr></table></figure>
+
+<p>如果要推送到远程仓库的其他分支，提交到 draft 分支</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:amaodou/test.git</span><br><span class="line">git checkout draft  <span class="comment"># 本地仓库分支 draft</span></span><br><span class="line">git push -u origin draft  <span class="comment"># 推送到远程 draft 分支</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Git-多个远程仓库同步"><a href="#Git-多个远程仓库同步" class="headerlink" title="Git 多个远程仓库同步"></a>Git 多个远程仓库同步</h3><p>比如本地仓库想要同时推送到 github 和 gitee 仓库</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:amaodou/test.git  <span class="comment"># github 仓库地址</span></span><br><span class="line">git remote <span class="built_in">set</span>-url --add origin git@gitee.com:amaodou/test.git  <span class="comment"># gitee 仓库地址</span></span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://amaodou.gitee.io/2020/05/09/ssh%E4%B9%8Bconfig%E4%BD%BF%E7%94%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="amaodou">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="amaodou's lab">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/09/ssh%E4%B9%8Bconfig%E4%BD%BF%E7%94%A8/" class="post-title-link" itemprop="url">ssh之config使用</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-09 17:51:59 / 修改时间：20:49:24" itemprop="dateCreated datePublished" datetime="2020-05-09T17:51:59+08:00">2020-05-09</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="ssh-使用"><a href="#ssh-使用" class="headerlink" title="ssh 使用"></a>ssh 使用</h3><p>我们使用简单的 ssh 命令即可登录远程服务器，如<code>ssh root@192.168.10.101</code>（默认使用端口号 22），如果服务器使用的是非标准的端口，则需要指定 ssh 连接端口，如<code>ssh root@192.168.10.101 -p 10022</code></p>
+<p>ssh 命令行选项</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">usage: ssh [-1246AaCfGgKkMNnqsTtVvXxYy] [-b bind_address] [-c cipher_spec]</span><br><span class="line">        [-D [bind_address:]port] [-E log_file] [-e escape_char]</span><br><span class="line">        [-F configfile] [-I pkcs11] [-i identity_file] [-L address]</span><br><span class="line">        [-l login_name] [-m mac_spec] [-O ctl_cmd] [-o option] [-p port]</span><br><span class="line">        [-Q query_option] [-R address] [-S ctl_path] [-W host:port]</span><br><span class="line">        [-w local_tun[:remote_tun]] [user@]hostname [<span class="built_in">command</span>]</span><br></pre></td></tr></table></figure>
+
+<p>当远程服务器数量增加到很难记住所有服务器的用户名、远程 ip、命令行选项时，我们该怎么办呢？</p>
+<p>一般有两种方式处理：创建别名指令和使用config配置</p>
+<h3 id="ssh-别名"><a href="#ssh-别名" class="headerlink" title="ssh 别名"></a>ssh 别名</h3><p>在<code>~/.bashrc</code>或者<code>~/.zshrc</code>（使用 zsh）文件中添加别名配置，使用如下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"alias dev=ssh root@192.168.10.101 -p 10022"</span> &gt;&gt; ~/.bashrc</span><br></pre></td></tr></table></figure>
+
+<h2 id="ssh-config"><a href="#ssh-config" class="headerlink" title="ssh config"></a>ssh config</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ~/.ssh/config 文件内容</span></span><br><span class="line">Host 101</span><br><span class="line">    HostName 192.168.10.101</span><br><span class="line">    User root</span><br><span class="line">    Port 1022</span><br></pre></td></tr></table></figure>
+
+<p>添加上述配置之后，意味着我可以使用<code>ssh 101</code>命令登录 192.168.10.101 服务器。</p>
+<p>也可以配置密钥登录，使用如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ~/.ssh/config 文件内容</span></span><br><span class="line">Host 101</span><br><span class="line">    HostName 192.168.10.101</span><br><span class="line">    User root</span><br><span class="line">    Port 1022</span><br><span class="line"></span><br><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    User git</span><br><span class="line">    IdentityFile ~/.ssh/github.key</span><br></pre></td></tr></table></figure>
+
+<p>添加上述配置，意味着当我使用 git clone 远程仓库时（比如 <code>git clone git@github.com:amaodou/amaodou.github.io.git</code>），使用密钥 github.key 进行认证。</p>
+<p>注意：如果<code>~/.ssh/config</code>文件不存在时，需要手动创建同时设置文件不能被其他用户访问</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建.ssh目录</span></span><br><span class="line">mkdir -p ~/.ssh &amp;&amp; chmod 700 ~/.ssh</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建config文件，设置访问权限</span></span><br><span class="line">touch ~/.ssh/config</span><br><span class="line">chmod 600 ~/.ssh/config</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://amaodou.gitee.io/2020/05/09/ali-java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%E7%B2%BE%E9%80%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="amaodou">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="amaodou's lab">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/09/ali-java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%E7%B2%BE%E9%80%89/" class="post-title-link" itemprop="url">ali Java开发手册精选</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-09 11:09:13 / 修改时间：20:49:24" itemprop="dateCreated datePublished" datetime="2020-05-09T11:09:13+08:00">2020-05-09</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="编程规约"><a href="#编程规约" class="headerlink" title="编程规约"></a>编程规约</h2><h3 id="命名风格"><a href="#命名风格" class="headerlink" title="命名风格"></a>命名风格</h3><ol>
+<li><p>【强制】POJO 类中布尔类型的变量，都不要加 is 前缀，否则部分框架解析会引起序列化错误。</p>
+<p>反例：定义为基本数据类型 Boolean isDeleted 的属性，它的方法也是 isDeleted()，RPC<br>框架在反向解析的时候，“误以为”对应的属性名称是 deleted，导致属性获取不到，进而抛<br>出异常。</p>
+</li>
+<li><p>【参考】各层命名规约：</p>
+<p>A) Service/DAO 层方法命名规约</p>
+<ol>
+<li>获取单个对象的方法用 get 做前缀。</li>
+<li>获取多个对象的方法用 list 做前缀，复数形式结尾如：listObjects。</li>
+<li>获取统计值的方法用 count 做前缀。</li>
+<li>插入的方法用 save/insert 做前缀。</li>
+<li>删除的方法用 remove/delete 做前缀。</li>
+<li>修改的方法用 update 做前缀。</li>
+</ol>
+<p>B) 领域模型命名规约</p>
+<ol>
+<li>数据对象：xxxDO，xxx 即为数据表名。</li>
+<li>数据传输对象：xxxDTO，xxx 为业务领域相关的名称。</li>
+<li>展示对象：xxxVO，xxx 一般为网页名称。</li>
+<li>POJO 是 DO/DTO/BO/VO 的统称，禁止命名成 xxxPOJO。</li>
+</ol>
+</li>
+</ol>
+<h3 id="OOP-规约"><a href="#OOP-规约" class="headerlink" title="OOP 规约"></a>OOP 规约</h3><ol>
+<li><p>【强制】Object 的 equals 方法容易抛空指针异常，应使用常量或确定有值的对象来调用<br>equals。</p>
+<p>正例：”test”.equals(object);</p>
+<p>反例：object.equals(“test”);</p>
+<p>说明：推荐使用 java.util.Objects#equals（JDK7 引入的工具类）</p>
+</li>
+<li><p>关于基本数据类型与包装数据类型的使用标准如下：</p>
+<ol>
+<li>【强制】所有的 POJO 类属性必须使用包装数据类型。</li>
+<li>【强制】RPC 方法的返回值和参数必须使用包装数据类型。</li>
+<li>【推荐】所有的局部变量使用基本数据类型。</li>
+</ol>
+<p>说明：POJO 类属性没有初值是提醒使用者在需要使用时，必须自己显式地进行赋值，任何<br>NPE 问题，或者入库检查，都由使用者来保证。</p>
+<p>正例：数据库的查询结果可能是 null，因为自动拆箱，用基本数据类型接收有 NPE 风险。</p>
+<p>反例：比如显示成交总额涨跌情况，即正负 x%，x 为基本数据类型，调用的 RPC 服务，调用<br>不成功时，返回的是默认值，页面显示为 0%，这是不合理的，应该显示成中划线。所以包装<br>数据类型的 null 值，能够表示额外的信息，如：远程调用失败，异常退出。</p>
+</li>
+<li><p>【强制】定义 DO/DTO/VO 等 POJO 类时，不要设定任何属性默认值。</p>
+<p>反例：POJO 类的 gmtCreate 默认值为 new Date()，但是这个属性在数据提取时并没有置入具<br>体值，在更新其它字段时又附带更新了此字段，导致创建时间被修改成当前时间。</p>
+</li>
+<li><p>【强制】序列化类新增属性时，请不要修改 serialVersionUID 字段，避免反序列失败；如<br>果完全不兼容升级，避免反序列化混乱，那么请修改 serialVersionUID 值。</p>
+<p>说明：注意 serialVersionUID 不一致会抛出序列化运行时异常。</p>
+</li>
+<li><p>【推荐】循环体内，字符串的连接方式，使用 StringBuilder 的 append 方法进行扩展。</p>
+<p>说明：下例中，反编译出的字节码文件显示每次循环都会 new 出一个 StringBuilder 对象，<br>然后进行 append 操作，最后通过 toString 方法返回 String 对象，造成内存资源浪费。</p>
+<p>反例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">String str = <span class="string">"start"</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">100</span>; i++) &#123;</span><br><span class="line">    str = str + <span class="string">"hello"</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="集合处理"><a href="#集合处理" class="headerlink" title="集合处理"></a>集合处理</h3><ol>
+<li><p>【强制】关于 hashCode 和 equals 的处理，遵循如下规则：</p>
+<ol>
+<li>只要重写 equals，就必须重写 hashCode。</li>
+<li>因为 Set 存储的是不重复的对象，依据 hashCode 和 equals 进行判断，所以 Set 存储的<br>对象必须重写这两个方法。</li>
+<li>如果自定义对象作为 Map 的键，那么必须重写 hashCode 和 equals。</li>
+</ol>
+<p>说明：String 重写了 hashCode 和 equals 方法，所以我们可以非常愉快地使用 String 对象<br>作为 key 来使用。</p>
+</li>
+<li><p>【强制】ArrayList 的 subList 结果不可强转成 ArrayList，否则会抛出 ClassCastException<br>异常，即 java.util.RandomAccessSubList cannot be cast to java.util.ArrayList。</p>
+<p>说明：subList 返回的是 ArrayList 的内部类 SubList，并不是 ArrayList 而是 ArrayList<br>的一个视图，对于 SubList 子列表的所有操作最终会反映到原列表上。</p>
+</li>
+<li><p>【强制】在 subList 场景中，高度注意对原集合元素的增加或删除，均会导致子列表的遍历、<br>增加、删除产生 ConcurrentModificationException 异常。</p>
+</li>
+<li><p>【强制】使用集合转数组的方法，必须使用集合的 toArray(T[] array)，传入的是类型完全<br>一样的数组，大小就是 list.size()。</p>
+<p>说明：使用 toArray 带参方法，入参分配的数组空间不够大时，toArray 方法内部将重新分配<br>内存空间，并返回新数组地址；如果数组元素个数大于实际所需，下标为[ list.size() ]<br>的数组元素将被置为 null，其它数组元素保持原值，因此最好将方法入参数组大小定义与集<br>合元素个数一致。</p>
+<p>正例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;String&gt;(<span class="number">2</span>);</span><br><span class="line">list.add(<span class="string">"guan"</span>);</span><br><span class="line">list.add(<span class="string">"bao"</span>);</span><br><span class="line">String[] array = <span class="keyword">new</span> String[list.size()];</span><br><span class="line">array = list.toArray(array);</span><br></pre></td></tr></table></figure>
+
+<p>反例：直接使用 toArray 无参方法存在问题，此方法返回值只能是 Object[]类，若强转其它<br>类型数组将出现 ClassCastException 错误。</p>
+</li>
+<li><p>【强制】使用工具类 Arrays.asList()把数组转换成集合时，不能使用其修改集合相关的方<br>法，它的 add/remove/clear 方法会抛出 UnsupportedOperationException 异常。</p>
+<p>说明：asList 的返回对象是一个 Arrays 内部类，并没有实现集合的修改方法。Arrays.asList<br>体现的是适配器模式，只是转换接口，后台的数据仍是数组。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String[] str = <span class="keyword">new</span> String[] &#123; <span class="string">"you"</span>, <span class="string">"wu"</span> &#125;;</span><br><span class="line">List list = Arrays.asList(str);</span><br></pre></td></tr></table></figure>
+
+<p>第一种情况：list.add(“yangguanbao”); 运行时异常。</p>
+<p>第二种情况：str[0] = “gujin”; 那么 list.get(0)也会随之修改。</p>
+</li>
+<li><p>【强制】泛型通配符&lt;? extends T&gt;来接收返回的数据，此写法的泛型集合不能使用 add 方<br>法，而&lt;? super T&gt;不能使用 get 方法，作为接口调用赋值时易出错。</p>
+<p>说明：扩展说一下 PECS(Producer Extends Consumer Super)原则：第一、频繁往外读取内<br>容的，适合用&lt;? extends T&gt;。第二、经常往里插入的，适合用&lt;? super T&gt;。</p>
+</li>
+<li><p>【强制】不要在 foreach 循环里进行元素的 remove/add 操作。remove 元素请使用 Iterator<br>方式，如果并发操作，需要对 Iterator 对象加锁。</p>
+<p>正例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">list.add(<span class="string">"1"</span>);</span><br><span class="line">list.add(<span class="string">"2"</span>);</span><br><span class="line">Iterator&lt;String&gt; iterator = list.iterator();</span><br><span class="line"><span class="keyword">while</span> (iterator.hasNext()) &#123;</span><br><span class="line">    String item = iterator.next();</span><br><span class="line">    <span class="keyword">if</span> (删除元素的条件) &#123;</span><br><span class="line">        iterator.remove();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>反例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (String item : list) &#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="string">"1"</span>.equals(item)) &#123;</span><br><span class="line">        list.remove(item);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>说明：以上代码的执行结果肯定会出乎大家的意料，那么试一下把“1”换成“2”，会是同样的<br>结果吗？</p>
+</li>
+<li><p>【强制】在 JDK7 版本及以上，Comparator 实现类要满足如下三个条件，不然 Arrays.sort，<br>Collections.sort 会报 IllegalArgumentException 异常。</p>
+<p>说明：三个条件如下</p>
+<ol>
+<li>x，y 的比较结果和 y，x 的比较结果相反。</li>
+<li>x&gt;y，y&gt;z，则 x&gt;z。</li>
+<li>x=y，则 x，z 比较结果和 y，z 比较结果相同。</li>
+</ol>
+<p>反例：下例中没有处理相等的情况，实际使用中可能会出现异常：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Comparator&lt;Student&gt;() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compare</span><span class="params">(Student o1, Student o2)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> o1.getId() &gt; o2.getId() ? <span class="number">1</span> : -<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>【推荐】集合初始化时，指定集合初始值大小。</p>
+<p>说明：HashMap 使用 HashMap(int initialCapacity) 初始化。</p>
+<p>正例：initialCapacity = (需要存储的元素个数 / 负载因子) + 1。注意负载因子（即 loader<br>factor）默认为 0.75，如果暂时无法确定初始值大小，请设置为 16（即默认值）。</p>
+<p>反例：HashMap 需要放置 1024 个元素，由于没有设置容量初始大小，随着元素不断增加，容<br>量 7 次被迫扩大，resize 需要重建 hash 表，严重影响性能。</p>
+</li>
+<li><p>【推荐】高度注意 Map 类集合 K/V 能不能存储 null 值的情况，如下表格：</p>
+<table>
+<thead>
+<tr>
+<th>集合类</th>
+<th>Key</th>
+<th>Value</th>
+<th>Super</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Hashtable</td>
+<td>不允许为 null</td>
+<td>不允许为 null</td>
+<td>Dictionary</td>
+<td>线程安全</td>
+</tr>
+<tr>
+<td>ConcurrentHashMap</td>
+<td>不允许为 null</td>
+<td>不允许为 null</td>
+<td>AbstractMap</td>
+<td>锁分段技术（JDK8:CAS）</td>
+</tr>
+<tr>
+<td>TreeMap</td>
+<td>不允许为 null</td>
+<td>允许为 null</td>
+<td>AbstractMap</td>
+<td>线程不安全</td>
+</tr>
+<tr>
+<td>HashMap</td>
+<td>允许为 null</td>
+<td>允许为 null</td>
+<td>AbstractMap</td>
+<td>线程不安全</td>
+</tr>
+</tbody></table>
+<p>反例： 由于 HashMap 的干扰，很多人认为 ConcurrentHashMap 是可以置入 null 值，而事实上，<br>存储 null 值时会抛出 NPE 异常。</p>
+</li>
+</ol>
+<h3 id="并发处理"><a href="#并发处理" class="headerlink" title="并发处理"></a>并发处理</h3><ol>
+<li><p>【强制】线程池不允许使用 Executors 去创建，而是通过 ThreadPoolExecutor 的方式，这样<br>的处理方式让写的同学更加明确线程池的运行规则，规避资源耗尽的风险。</p>
+<p>说明：Executors 返回的线程池对象的弊端如下：</p>
+<ol>
+<li>FixedThreadPool 和 SingleThreadPool:<br>允许的请求队列长度为 Integer.MAX_VALUE，可能会堆积大量的请求，从而导致 OOM。</li>
+<li>CachedThreadPool 和 ScheduledThreadPool:<br>允许的创建线程数量为 Integer.MAX_VALUE，可能会创建大量的线程，从而导致 OOM。</li>
+</ol>
+</li>
+<li><p>【强制】SimpleDateFormat 是线程不安全的类，一般不要定义为 static 变量，如果定义为<br>static，必须加锁，或者使用 DateUtils 工具类。</p>
+<p>正例：注意线程安全，使用 DateUtils。亦推荐如下处理：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> ThreadLocal&lt;DateFormat&gt; df = <span class="keyword">new</span> ThreadLocal&lt;DateFormat&gt;() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> DateFormat <span class="title">initialValue</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> SimpleDateFormat(<span class="string">"yyyy-MM-dd"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>说明：如果是 JDK8 的应用，可以使用 Instant 代替 Date，LocalDateTime 代替 Calendar，<br>DateTimeFormatter 代替 SimpleDateFormat，官方给出的解释：simple beautiful strong<br>immutable thread-safe。</p>
+</li>
+<li><p>【推荐】使用 CountDownLatch 进行异步转同步操作，每个线程退出前必须调用 countDown<br>方法，线程执行代码注意 catch 异常，确保 countDown 方法被执行到，避免主线程无法执行<br>至 await 方法，直到超时才返回结果。</p>
+<p>说明：注意，子线程抛出异常堆栈，不能在主线程 try-catch 到。</p>
+</li>
+<li><p>【参考】 HashMap 在容量不够进行 resize 时由于高并发可能出现死链，导致 CPU 飙升，在<br>开发过程中可以使用其它数据结构或加锁来规避此风险。</p>
+</li>
+</ol>
+<h3 id="注释规约"><a href="#注释规约" class="headerlink" title="注释规约"></a>注释规约</h3><ol>
+<li><p>【强制】类、类属性、类方法的注释必须使用 Javadoc 规范，使用/*<em>内容</em>/格式，不得使用<br>// xxx 方式。</p>
+<p>说明：在 IDE 编辑窗口中，Javadoc 方式会提示相关注释，生成 Javadoc 可以正确输出相应注<br>释；在 IDE 中，工程调用方法时，不进入方法即可悬浮提示方法、参数、返回值的意义，提高<br>阅读效率。</p>
+</li>
+<li><p>【参考】特殊注释标记，请注明标记人与标记时间。注意及时处理这些标记，通过标记扫描，<br>经常清理此类标记。线上故障有时候就是来源于这些标记处的代码。</p>
+<ol>
+<li>待办事宜（TODO）:（ 标记人，标记时间，[预计处理时间]）<br>表示需要实现，但目前还未实现的功能。这实际上是一个 Javadoc 的标签，目前的 Javadoc<br>还没有实现，但已经被广泛使用。只能应用于类，接口和方法（因为它是一个 Javadoc 标签）。</li>
+<li>错误，不能工作（FIXME）:（标记人，标记时间，[预计处理时间]）<br>在注释中用 FIXME 标记某代码是错误的，而且不能工作，需要及时纠正的情况。</li>
+</ol>
+</li>
+</ol>
+<h2 id="异常日志"><a href="#异常日志" class="headerlink" title="异常日志"></a>异常日志</h2><ol>
+<li><p>【强制】异常不要用来做流程控制，条件控制。</p>
+<p>说明：异常设计的初衷是解决程序运行中的各种意外情况，且异常的处理效率比条件判断方式<br>要低很多。</p>
+</li>
+<li><p>【强制】不要在 finally 块中使用 return。</p>
+<p>说明：finally 块中的 return 返回后方法结束执行，不会再执行 try 块中的 return 语句。</p>
+</li>
+<li><p>【推荐】方法的返回值可以为 null，不强制返回空集合，或者空对象等，必须添加注释充分<br>说明什么情况下会返回 null 值。</p>
+<p>说明：本手册明确防止 NPE 是调用者的责任。即使被调用方法返回空集合或者空对象，对调用<br>者来说，也并非高枕无忧，必须考虑到远程调用失败、序列化失败、运行时异常等场景返回<br>null 的情况。</p>
+</li>
+</ol>
+<h2 id="单元测试"><a href="#单元测试" class="headerlink" title="单元测试"></a>单元测试</h2><ol>
+<li><p>【强制】好的单元测试必须遵守 AIR 原则。</p>
+<p>说明：单元测试在线上运行时，感觉像空气（AIR）一样并不存在，但在测试质量的保障上，<br>却是非常关键的。好的单元测试宏观上来说，具有自动化、独立性、可重复执行的特点。</p>
+<ul>
+<li>A：Automatic（自动化）</li>
+<li>I：Independent（独立性）</li>
+<li>R：Repeatable（可重复）</li>
+</ul>
+</li>
+<li><p>【强制】单元测试是可以重复执行的，不能受到外界环境的影响。</p>
+<p>说明：单元测试通常会被放到持续集成中，每次有代码 check in 时单元测试都会被执行。如<br>果单测对外部环境（网络、服务、中间件等）有依赖，容易导致持续集成机制的不可用。</p>
+<p>正例：为了不受外界环境影响，要求设计代码时就把 SUT 的依赖改成注入，在测试时用 spring<br>这样的 DI 框架注入一个本地（内存）实现或者 Mock 实现。</p>
+</li>
+<li><p>【推荐】编写单元测试代码遵守 BCDE 原则，以保证被测试模块的交付质量。</p>
+<ul>
+<li>B：Border，边界值测试，包括循环边界、特殊取值、特殊时间点、数据顺序等。</li>
+<li>C：Correct，正确的输入，并得到预期的结果。</li>
+<li>D：Design，与设计文档相结合，来编写单元测试。</li>
+<li>E：Error，强制错误信息输入（如：非法数据、异常流程、非业务允许输入等），并得<br>到预期的结果。</li>
+</ul>
+</li>
+</ol>
+<h2 id="MySQL-数据库"><a href="#MySQL-数据库" class="headerlink" title="MySQL 数据库"></a>MySQL 数据库</h2><h3 id="索引规约"><a href="#索引规约" class="headerlink" title="索引规约"></a>索引规约</h3><ol>
+<li><p>【强制】业务上具有唯一特性的字段，即使是多个字段的组合，也必须建成唯一索引。</p>
+<p>说明：不要以为唯一索引影响了 insert 速度，这个速度损耗可以忽略，但提高查找速度是明<br>显的；另外，即使在应用层做了非常完善的校验控制，只要没有唯一索引，根据墨菲定律，必<br>然有脏数据产生。</p>
+</li>
+<li><p>【强制】在 varchar 字段上建立索引时，必须指定索引长度，没必要对全字段建立索引，根据<br>实际文本区分度决定索引长度即可。</p>
+<p>说明：索引的长度与区分度是一对矛盾体，一般对字符串类型数据，长度为 20 的索引，区分<br>度会高达 90%以上，可以使用 count(distinct left(列名, 索引长度))/count(*)的区分度<br>来确定。</p>
+</li>
+<li><p>【强制】页面搜索严禁左模糊或者全模糊，如果需要请走搜索引擎来解决。</p>
+<p>说明：索引文件具有 B-Tree 的最左前缀匹配特性，如果左边的值未确定，那么无法使用此索<br>引。</p>
+</li>
+<li><p>【推荐】利用延迟关联或者子查询优化超多分页场景。</p>
+<p>说明：MySQL 并不是跳过 offset 行，而是取 offset+N 行，然后返回放弃前 offset 行，返回<br>N 行，那当 offset 特别大的时候，效率就非常的低下，要么控制返回的总页数，要么对超过<br>特定阈值的页数进行 SQL 改写。</p>
+<p>正例：先快速定位需要获取的 id 段，然后再关联：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> a.* <span class="keyword">FROM</span> 表 <span class="number">1</span> a, (<span class="keyword">select</span> <span class="keyword">id</span> <span class="keyword">from</span> 表 <span class="number">1</span> <span class="keyword">where</span> 条件 <span class="keyword">LIMIT</span> <span class="number">100000</span>,<span class="number">20</span> ) b <span class="keyword">where</span> a.id=b.id</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>【推荐】SQL 性能优化的目标：至少要达到 range 级别，要求是 ref 级别，如果可以是 consts<br>最好。</p>
+<p>说明：</p>
+<ol>
+<li>consts 单表中最多只有一个匹配行（主键或者唯一索引），在优化阶段即可读取到数据。</li>
+<li>ref 指的是使用普通的索引（normal index）。</li>
+<li>range 对索引进行范围检索。</li>
+</ol>
+<p>反例：explain 表的结果，type=index，索引物理文件全扫描，速度非常慢，这个 index 级<br>别比较 range 还低，与全表扫描是小巫见大巫。</p>
+</li>
+</ol>
+<h3 id="SQL-语句"><a href="#SQL-语句" class="headerlink" title="SQL 语句"></a>SQL 语句</h3><ol>
+<li><p>【强制】不要使用 count(列名)或 count(常量)来替代 count(<em>)，count(</em>)是 SQL92 定义的<br>标准统计行数的语法，跟数据库无关，跟 NULL 和非 NULL 无关。</p>
+<p>说明：count(*)会统计值为 NULL 的行，而 count(列名)不会统计此列为 NULL 值的行。</p>
+</li>
+<li><p>【强制】count(distinct col) 计算该列除 NULL 之外的不重复行数，注意 count(distinct<br>col1, col2) 如果其中一列全为 NULL，那么即使另一列有不同的值，也返回为 0。</p>
+</li>
+<li><p>【强制】当某一列的值全是 NULL 时，count(col)的返回结果为 0，但 sum(col)的返回结果为<br>NULL，因此使用 sum()时需注意 NPE 问题。</p>
+<p>正例：可以使用如下方式来避免 sum 的 NPE 问题：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">IF</span>(<span class="keyword">ISNULL</span>(<span class="keyword">SUM</span>(g)),<span class="number">0</span>,<span class="keyword">SUM</span>(g)) <span class="keyword">FROM</span> <span class="keyword">table</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>【强制】使用 ISNULL()来判断是否为 NULL 值。</p>
+<p>说明：NULL 与任何值的直接比较都为 NULL。</p>
+<ol>
+<li>NULL&lt;&gt;NULL 的返回结果是 NULL，而不是 false。</li>
+<li>NULL=NULL 的返回结果是 NULL，而不是 true。</li>
+<li>NULL&lt;&gt;1 的返回结果是 NULL，而不是 true。</li>
+</ol>
+</li>
+<li><p>【推荐】in 操作能避免则避免，若实在避免不了，需要仔细评估 in 后边的集合元素数量，控<br>制在 1000 个之内。</p>
+</li>
+<li><p>【参考】如果有国际化需要，所有的字符存储与表示，均以 utf-8 编码，注意字符统计函数<br>的区别。</p>
+<p>说明：</p>
+<p>SELECT LENGTH(“轻松工作”)； 返回为 12</p>
+<p>SELECT CHARACTER_LENGTH(“轻松工作”)； 返回为 4</p>
+<p>如果需要存储表情，那么选择 utf8mb4 来进行存储，注意它与 utf-8 编码的区别。</p>
+</li>
+</ol>
+<h3 id="ORM-映射"><a href="#ORM-映射" class="headerlink" title="ORM 映射"></a>ORM 映射</h3><ol>
+<li><p>【强制】POJO 类的布尔属性不能加 is，而数据库字段必须加 is_，要求在 resultMap 中进行<br>字段与属性之间的映射。</p>
+<p>说明：参见定义 POJO 类以及数据库字段定义规定，在<code>&lt;resultMap&gt;</code>中增加映射，是必须的。<br>在 MyBatis Generator 生成的代码中，需要进行对应的修改。</p>
+</li>
+<li><p>【推荐】不要写一个大而全的数据更新接口。传入为 POJO 类，不管是不是自己的目标更新字<br>段，都进行 <code>update table set c1=value1,c2=value2,c3=value3;</code> 这是不对的。执行 SQL<br>时，不要更新无改动的字段，一是易出错；二是效率低；三是增加 binlog 存储。</p>
+</li>
+</ol>
+<h2 id="工程结构"><a href="#工程结构" class="headerlink" title="工程结构"></a>工程结构</h2><h3 id="应用分层"><a href="#应用分层" class="headerlink" title="应用分层"></a>应用分层</h3><ol>
+<li><p>【参考】分层领域模型规约：</p>
+<ul>
+<li>DO（Data Object）：此对象与数据库表结构一一对应，通过 DAO 层向上传输数据源对象。</li>
+<li>DTO（Data Transfer Object）：数据传输对象，Service 或 Manager 向外传输的对象。</li>
+<li>BO（Business Object）：业务对象，由 Service 层输出的封装业务逻辑的对象。</li>
+<li>AO（Application Object）：应用对象，在 Web 层与 Service 层之间抽象的复用对象模型，<br>极为贴近展示层，复用度不高。</li>
+<li>VO（View Object）：显示层对象，通常是 Web 向模板渲染引擎层传输的对象。</li>
+<li>Query：数据查询对象，各层接收上层的查询请求。注意超过 2 个参数的查询封装，禁止<br>使用 Map 类来传输。</li>
+</ul>
+</li>
+</ol>
+<h3 id="二方库依赖"><a href="#二方库依赖" class="headerlink" title="二方库依赖"></a>二方库依赖</h3><ol>
+<li><p>【强制】二方库版本号命名方式：主版本号.次版本号.修订号</p>
+<ol>
+<li>主版本号：产品方向改变，或者大规模 API 不兼容，或者架构不兼容升级。</li>
+<li>次版本号：保持相对兼容性，增加主要功能特性，影响范围极小的 API 不兼容修改。</li>
+<li>修订号：保持完全兼容性，修复 BUG、新增次要功能特性等。</li>
+</ol>
+<p>说明：注意起始版本号必须为：1.0.0，而不是 0.0.1 正式发布的类库必须先去中央仓库进<br>行查证，使版本号有延续性，正式版本号不允许覆盖升级。如当前版本：1.3.3，那么下一个<br>合理的版本号：1.3.4 或 1.4.0 或 2.0.0</p>
+</li>
+<li><p>【强制】二方库里可以定义枚举类型，参数可以使用枚举类型，但是接口返回值不允许使用枚<br>举类型或者包含枚举类型的 POJO 对象。</p>
+</li>
+<li><p>【推荐】所有 pom 文件中的依赖声明放在<code>&lt;dependencies&gt;</code>语句块中，所有版本仲裁放在<br><code>&lt;dependencyManagement&gt;</code>语句块中。</p>
+<p>说明：<code>&lt;dependencyManagement&gt;</code>里只是声明版本，并不实现引入，因此子项目需要显式的声<br>明依赖，version 和 scope 都读取自父 pom。而<code>&lt;dependencies&gt;</code>所有声明在主 pom 的<br><code>&lt;dependencies&gt;</code>里的依赖都会自动引入，并默认被所有的子项目继承。</p>
+</li>
+</ol>
+<h3 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h3><ol>
+<li><p>【推荐】高并发服务器建议调小 TCP 协议的 time_wait 超时时间。</p>
+<p>说明：操作系统默认 240 秒后，才会关闭处于 time_wait 状态的连接，在高并发访问下，服<br>务器端会因为处于 time_wait 的连接数太多，可能无法建立新的连接，所以需要在服务器上<br>调小此等待值。</p>
+<p>正例：在 linux 服务器上请通过变更/etc/sysctl.conf 文件去修改该缺省值（秒）：<br>net.ipv4.tcp_fin_timeout = 30</p>
+</li>
+</ol>
+<h2 id="设计规约"><a href="#设计规约" class="headerlink" title="设计规约"></a>设计规约</h2><ol>
+<li><p>【推荐】谨慎使用继承的方式来进行扩展，优先使用聚合/组合的方式来实现。</p>
+<p>说明：不得已使用继承的话，必须符合里氏代换原则，此原则说父类能够出现的地方子类一定<br>能够出现，比如，“把钱交出来”，钱的子类美元、欧元、人民币等都可以出现。</p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://amaodou.gitee.io/2020/05/09/%E5%9B%BE%E8%A7%A3string%E7%9A%84%E4%B8%8D%E5%8F%AF%E5%8F%98%E6%80%A7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="amaodou">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="amaodou's lab">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/09/%E5%9B%BE%E8%A7%A3string%E7%9A%84%E4%B8%8D%E5%8F%AF%E5%8F%98%E6%80%A7/" class="post-title-link" itemprop="url">图解Java String的不可变性</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-09 11:07:36 / 修改时间：20:49:24" itemprop="dateCreated datePublished" datetime="2020-05-09T11:07:36+08:00">2020-05-09</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>翻译自 <a href="http://www.programcreek.com/2009/02/diagram-to-show-java-strings-immutability/" target="_blank" rel="noopener">What is string immutability</a></p>
+<h3 id="定义字符串"><a href="#定义字符串" class="headerlink" title="定义字符串"></a>定义字符串</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String s = <span class="string">"abcd"</span>;</span><br></pre></td></tr></table></figure>
+
+<p>s 存储了字符串对象”abcd”的引用，也可以理解为 s 指向字符串对象”abcd”。</p>
+<p><img src="/images/reference_new_string.jpeg" alt="reference new string"></p>
+<h3 id="字符串赋值"><a href="#字符串赋值" class="headerlink" title="字符串赋值"></a>字符串赋值</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String s2 = s;</span><br></pre></td></tr></table></figure>
+
+<p>s2 也存储了字符串对象”abcd”的引用，s 和 s2 都指向字符串对象”abcd”。</p>
+<p><img src="/images/reference_string.jpeg" alt="reference string"></p>
+<h3 id="字符串连接"><a href="#字符串连接" class="headerlink" title="字符串连接"></a>字符串连接</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s = s.concat(<span class="string">"ef"</span>);</span><br></pre></td></tr></table></figure>
+
+<p>这时 s 存储了一个新的字符串对象的引用，s 指向新的字符串对象”abcdef”。</p>
+<p><img src="/images/update_reference.jpeg" alt="update reference"></p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>字符串一旦在内存（堆）中创建就不能改变。需要注意的是，String 对象的所有方法都不会改变字符串本身，而是返回一个新的字符串对象。</p>
+<p>如果需要可变的字符串，则需要使用 StringBuffer 或 StringBuilder。否则每次创建新的字符串对象，将导致大量的时间耗费在垃圾回收（Garbage Collection）上。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">StringBuilder mutableString = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">mutableString.append(<span class="string">"abcd"</span>);</span><br><span class="line">mutableString.append(<span class="string">"ef"</span>);</span><br><span class="line">mutableString.toString();</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://amaodou.gitee.io/2020/05/09/spring-boot%E5%90%AF%E5%8A%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="amaodou">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="amaodou's lab">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/09/spring-boot%E5%90%AF%E5%8A%A8%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/" class="post-title-link" itemprop="url">Spring Boot启动过程分析</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-09 11:04:39 / 修改时间：20:49:24" itemprop="dateCreated datePublished" datetime="2020-05-09T11:04:39+08:00">2020-05-09</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Spring-Boot-应用启动入口"><a href="#Spring-Boot-应用启动入口" class="headerlink" title="Spring Boot 应用启动入口"></a>Spring Boot 应用启动入口</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebApplication</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(WebApplication<span class="class">.<span class="keyword">class</span>, <span class="title">args</span>)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>启动入口类有两个关键元素：<code>@SpringBootApplication</code>和<code>SpringApplication::run</code></p>
+<ul>
+<li><p><code>@SpringBootApplication</code></p>
+<p>这是由多个注解组合成的一个新的注解，作用等效于使用 <code>@EnableAutoConfiguration</code> + <code>@SpringBootConfiguration</code> + <code>@ComponentScan</code></p>
+</li>
+<li><p><code>SpringApplication::run</code></p>
+<p>调用<code>SpringApplication</code>类的静态<code>run()</code>方法，实际上是先实例化了<code>SpringApplication</code>对象，然后再调用该对象的<code>run()</code>方法。</p>
+</li>
+</ul>
+<h3 id="实例化-SpringApplication"><a href="#实例化-SpringApplication" class="headerlink" title="实例化 SpringApplication"></a>实例化 SpringApplication</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">SpringApplication</span><span class="params">(ResourceLoader resourceLoader, Class&lt;?&gt;... primarySources)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.resourceLoader = resourceLoader;</span><br><span class="line">    Assert.notNull(primarySources, <span class="string">"PrimarySources must not be null"</span>);</span><br><span class="line">    <span class="keyword">this</span>.primarySources = <span class="keyword">new</span> LinkedHashSet&lt;&gt;(Arrays.asList(primarySources));</span><br><span class="line">    <span class="keyword">this</span>.webApplicationType = WebApplicationType.deduceFromClasspath();</span><br><span class="line">    setInitializers((Collection) getSpringFactoriesInstances(</span><br><span class="line">            ApplicationContextInitializer<span class="class">.<span class="keyword">class</span>))</span>;</span><br><span class="line">    setListeners((Collection) getSpringFactoriesInstances(ApplicationListener<span class="class">.<span class="keyword">class</span>))</span>;</span><br><span class="line">    <span class="keyword">this</span>.mainApplicationClass = deduceMainApplicationClass();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>实例化<code>SpringApplication</code>过程做了 4 件事：推断应用类型、设置 Initializers、设置 Listeners、推断<code>main</code>方法定义类</p>
+<ol>
+<li><p>推断应用类型，根据默认类加载器（即 sun.misc.Launcher$AppClassLoader）是否可以加载指定的类判断应用是 REACTIVE 应用、SERVLET 应用、NONE；</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> WebApplicationType <span class="title">deduceFromClasspath</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (ClassUtils.isPresent(WEBFLUX_INDICATOR_CLASS, <span class="keyword">null</span>)</span><br><span class="line">            &amp;&amp; !ClassUtils.isPresent(WEBMVC_INDICATOR_CLASS, <span class="keyword">null</span>)</span><br><span class="line">            &amp;&amp; !ClassUtils.isPresent(JERSEY_INDICATOR_CLASS, <span class="keyword">null</span>)) &#123;</span><br><span class="line">        <span class="keyword">return</span> WebApplicationType.REACTIVE;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (String className : SERVLET_INDICATOR_CLASSES) &#123;</span><br><span class="line">        <span class="keyword">if</span> (!ClassUtils.isPresent(className, <span class="keyword">null</span>)) &#123;</span><br><span class="line">            <span class="keyword">return</span> WebApplicationType.NONE;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> WebApplicationType.SERVLET;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置 Initializers，使用默认的类加载器加载 classpath 下的<code>META-INF/spring.factories</code>资源文件，解析获得文件中配置的<code>ApplicationContextInitializer</code>的实现类并实例化这些类；</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> &lt;T&gt; <span class="function">Collection&lt;T&gt; <span class="title">getSpringFactoriesInstances</span><span class="params">(Class&lt;T&gt; type)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> getSpringFactoriesInstances(type, <span class="keyword">new</span> Class&lt;?&gt;[] &#123;&#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> &lt;T&gt; <span class="function">Collection&lt;T&gt; <span class="title">getSpringFactoriesInstances</span><span class="params">(Class&lt;T&gt; type,</span></span></span><br><span class="line"><span class="function"><span class="params">        Class&lt;?&gt;[] parameterTypes, Object... args)</span> </span>&#123;</span><br><span class="line">    ClassLoader classLoader = getClassLoader();</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Use names and ensure unique to protect against duplicates</span></span><br><span class="line">    <span class="comment">// 加载spring.factories资源文件，解析获得其中配置的ApplicationContextInitializer类</span></span><br><span class="line">    Set&lt;String&gt; names = <span class="keyword">new</span> LinkedHashSet&lt;&gt;(</span><br><span class="line">            SpringFactoriesLoader.loadFactoryNames(type, classLoader));</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 初始化所有ApplicationContextInitializer类</span></span><br><span class="line">    List&lt;T&gt; instances = createSpringFactoriesInstances(type, parameterTypes,</span><br><span class="line">            classLoader, args, names);</span><br><span class="line">    AnnotationAwareOrderComparator.sort(instances);</span><br><span class="line">    <span class="keyword">return</span> instances;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> &lt;T&gt; <span class="function">List&lt;T&gt; <span class="title">createSpringFactoriesInstances</span><span class="params">(Class&lt;T&gt; type,</span></span></span><br><span class="line"><span class="function"><span class="params">        Class&lt;?&gt;[] parameterTypes, ClassLoader classLoader, Object[] args,</span></span></span><br><span class="line"><span class="function"><span class="params">        Set&lt;String&gt; names)</span> </span>&#123;</span><br><span class="line">    List&lt;T&gt; instances = <span class="keyword">new</span> ArrayList&lt;&gt;(names.size());</span><br><span class="line">    <span class="keyword">for</span> (String name : names) &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Class&lt;?&gt; instanceClass = ClassUtils.forName(name, classLoader);</span><br><span class="line">            Assert.isAssignable(type, instanceClass);</span><br><span class="line">            Constructor&lt;?&gt; constructor = instanceClass</span><br><span class="line">                    .getDeclaredConstructor(parameterTypes);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 通过反射机制类的构造函数创建对象</span></span><br><span class="line">            T instance = (T) BeanUtils.instantiateClass(constructor, args);</span><br><span class="line">            instances.add(instance);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">catch</span> (Throwable ex) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(</span><br><span class="line">                    <span class="string">"Cannot instantiate "</span> + type + <span class="string">" : "</span> + name, ex);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> instances;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>META-INF/spring.factories</code>配置的<code>ApplicationContextInitializer</code>如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">org.springframework.context.ApplicationContextInitializer=\</span><br><span class="line">org.springframework.boot.context.ConfigurationWarningsApplicationContextInitializer,\</span><br><span class="line">org.springframework.boot.context.ContextIdApplicationContextInitializer,\</span><br><span class="line">org.springframework.boot.context.config.DelegatingApplicationContextInitializer,\</span><br><span class="line">org.springframework.boot.web.context.ServerPortInfoApplicationContextInitializer</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置 Listeners，实例化<code>META-INF/spring.factories</code>中的<code>ApplicationListener</code>类；</p>
+<p><code>META-INF/spring.factories</code>配置的<code>ApplicationListener</code>如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">org.springframework.context.ApplicationListener=\</span><br><span class="line">org.springframework.boot.ClearCachesApplicationListener,\</span><br><span class="line">org.springframework.boot.builder.ParentContextCloserApplicationListener,\</span><br><span class="line">org.springframework.boot.context.FileEncodingApplicationListener,\</span><br><span class="line">org.springframework.boot.context.config.AnsiOutputApplicationListener,\</span><br><span class="line">org.springframework.boot.context.config.ConfigFileApplicationListener,\</span><br><span class="line">org.springframework.boot.context.config.DelegatingApplicationListener,\</span><br><span class="line">org.springframework.boot.context.logging.ClasspathLoggingApplicationListener,\</span><br><span class="line">org.springframework.boot.context.logging.LoggingApplicationListener,\</span><br><span class="line">org.springframework.boot.liquibase.LiquibaseServiceLocatorApplicationListener</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>推断<code>main</code>方法定义类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> Class&lt;?&gt; deduceMainApplicationClass() &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        StackTraceElement[] stackTrace = <span class="keyword">new</span> RuntimeException().getStackTrace();</span><br><span class="line">        <span class="keyword">for</span> (StackTraceElement stackTraceElement : stackTrace) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="string">"main"</span>.equals(stackTraceElement.getMethodName())) &#123;</span><br><span class="line">                <span class="keyword">return</span> Class.forName(stackTraceElement.getClassName());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">catch</span> (ClassNotFoundException ex) &#123;</span><br><span class="line">        <span class="comment">// Swallow and continue</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="SpringApplication-的-run-方法"><a href="#SpringApplication-的-run-方法" class="headerlink" title="SpringApplication 的 run()方法"></a>SpringApplication 的 run()方法</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> ConfigurableApplicationContext <span class="title">run</span><span class="params">(String... args)</span> </span>&#123;</span><br><span class="line">    StopWatch stopWatch = <span class="keyword">new</span> StopWatch();</span><br><span class="line">    stopWatch.start();</span><br><span class="line">    ConfigurableApplicationContext context = <span class="keyword">null</span>;</span><br><span class="line">    Collection&lt;SpringBootExceptionReporter&gt; exceptionReporters = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 设置java.awt.headless模式</span></span><br><span class="line">    configureHeadlessProperty();</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 实例化spring.factories中配置的SpringApplicationRunListener类，即EventPublishingRunListener</span></span><br><span class="line">    SpringApplicationRunListeners listeners = getRunListeners(args);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 发布Starting事件，listeners接收事件并执行相应操作</span></span><br><span class="line">    listeners.starting();</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// 封装参数准备环境Environment</span></span><br><span class="line">        ApplicationArguments applicationArguments = <span class="keyword">new</span> DefaultApplicationArguments(</span><br><span class="line">                args);</span><br><span class="line">        ConfigurableEnvironment environment = prepareEnvironment(listeners,</span><br><span class="line">                applicationArguments);</span><br><span class="line"></span><br><span class="line">        configureIgnoreBeanInfo(environment);</span><br><span class="line">        Banner printedBanner = printBanner(environment);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 根据不同的应用类型创建ApplicationContext</span></span><br><span class="line">        context = createApplicationContext();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 实例化spring.factories中配置的SpringBootExceptionReporter类，即FailureAnalyzers</span></span><br><span class="line">        <span class="comment">// FailureAnalyzers用于故障分析并将诊断信息展示给用户</span></span><br><span class="line">        exceptionReporters = getSpringFactoriesInstances(</span><br><span class="line">                SpringBootExceptionReporter<span class="class">.<span class="keyword">class</span>,</span></span><br><span class="line">                new Class[] &#123; ConfigurableApplicationContext.class &#125;, context);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// ApplicationContext设置环境，注册类型转换器</span></span><br><span class="line">        <span class="comment">// 使用Initializer初始化ApplicationContext，发布Initialized和Prepared事件</span></span><br><span class="line">        prepareContext(context, environment, listeners, applicationArguments,</span><br><span class="line">                printedBanner);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 调用AbstractApplicationContext的refresh方法，注册Shutdown钩子方法</span></span><br><span class="line">        refreshContext(context);</span><br><span class="line">        afterRefresh(context, applicationArguments);</span><br><span class="line">        stopWatch.stop();</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.logStartupInfo) &#123;</span><br><span class="line">            <span class="keyword">new</span> StartupInfoLogger(<span class="keyword">this</span>.mainApplicationClass)</span><br><span class="line">                    .logStarted(getApplicationLog(), stopWatch);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 发布Started事件</span></span><br><span class="line">        listeners.started(context);</span><br><span class="line">        callRunners(context, applicationArguments);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">catch</span> (Throwable ex) &#123;</span><br><span class="line">        handleRunFailure(context, ex, exceptionReporters, listeners);</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> IllegalStateException(ex);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// 发布Ready事件</span></span><br><span class="line">        listeners.running(context);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">catch</span> (Throwable ex) &#123;</span><br><span class="line">        <span class="comment">// ApplicationContext启动失败发布Failed事件，报告启动失败原因</span></span><br><span class="line">        handleRunFailure(context, ex, exceptionReporters, <span class="keyword">null</span>);</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> IllegalStateException(ex);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> context;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>准备 ApplicationContext 环境 Environment</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> ConfigurableEnvironment <span class="title">prepareEnvironment</span><span class="params">(</span></span></span><br><span class="line"><span class="function"><span class="params">        SpringApplicationRunListeners listeners,</span></span></span><br><span class="line"><span class="function"><span class="params">        ApplicationArguments applicationArguments)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// Create and configure the environment</span></span><br><span class="line">    <span class="comment">// 根据应用类型创建Environment</span></span><br><span class="line">    <span class="comment">// SERVLET: StandardServletEnvironment</span></span><br><span class="line">    <span class="comment">// REACTIVE: StandardReactiveWebEnvironment</span></span><br><span class="line">    <span class="comment">// NONE: StandardEnvironment</span></span><br><span class="line">    ConfigurableEnvironment environment = getOrCreateEnvironment();</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 初始化ApplicationConversionService并配置类型转换器 (如StringToBooleanConverter, StringToArrayConverter);</span></span><br><span class="line">    <span class="comment">// 配置Environment的PropertySource</span></span><br><span class="line">    <span class="comment">// 配置Environment的Profile, 即加载spring.profiles.active文件中的配置</span></span><br><span class="line">    configureEnvironment(environment, applicationArguments.getSourceArgs());</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Environment准备就绪创建ApplicationContext之前，发布ApplicationEnvironmentPreparedEvent事件</span></span><br><span class="line">    listeners.environmentPrepared(environment);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 把Environment绑定到SpringApplication</span></span><br><span class="line">    bindToSpringApplication(environment);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (!<span class="keyword">this</span>.isCustomEnvironment) &#123;</span><br><span class="line">        environment = <span class="keyword">new</span> EnvironmentConverter(getClassLoader())</span><br><span class="line">                .convertEnvironmentIfNecessary(environment, deduceEnvironmentClass());</span><br><span class="line">    &#125;</span><br><span class="line">    ConfigurationPropertySources.attach(environment);</span><br><span class="line">    <span class="keyword">return</span> environment;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>准备 ApplicationContext</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">prepareContext</span><span class="params">(ConfigurableApplicationContext context,</span></span></span><br><span class="line"><span class="function"><span class="params">        ConfigurableEnvironment environment, SpringApplicationRunListeners listeners,</span></span></span><br><span class="line"><span class="function"><span class="params">        ApplicationArguments applicationArguments, Banner printedBanner)</span> </span>&#123;</span><br><span class="line">    context.setEnvironment(environment);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 注册类型转换器</span></span><br><span class="line">    postProcessApplicationContext(context);</span><br><span class="line">    applyInitializers(context);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// ApplicationContext创建sources加载前，发布ApplicationContextInitializedEvent事件</span></span><br><span class="line">    listeners.contextPrepared(context);</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.logStartupInfo) &#123;</span><br><span class="line">        logStartupInfo(context.getParent() == <span class="keyword">null</span>);</span><br><span class="line">        logStartupProfileInfo(context);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// Add boot specific singleton beans</span></span><br><span class="line">    ConfigurableListableBeanFactory beanFactory = context.getBeanFactory();</span><br><span class="line">    beanFactory.registerSingleton(<span class="string">"springApplicationArguments"</span>, applicationArguments);</span><br><span class="line">    <span class="keyword">if</span> (printedBanner != <span class="keyword">null</span>) &#123;</span><br><span class="line">        beanFactory.registerSingleton(<span class="string">"springBootBanner"</span>, printedBanner);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (beanFactory <span class="keyword">instanceof</span> DefaultListableBeanFactory) &#123;</span><br><span class="line">        ((DefaultListableBeanFactory) beanFactory)</span><br><span class="line">                .setAllowBeanDefinitionOverriding(<span class="keyword">this</span>.allowBeanDefinitionOverriding);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// Load the sources</span></span><br><span class="line">    Set&lt;Object&gt; sources = getAllSources();</span><br><span class="line">    Assert.notEmpty(sources, <span class="string">"Sources must not be empty"</span>);</span><br><span class="line">    load(context, sources.toArray(<span class="keyword">new</span> Object[<span class="number">0</span>]));</span><br><span class="line"></span><br><span class="line">    <span class="comment">// ApplicationContext加载完刷新前，发布ApplicationPreparedEvent事件</span></span><br><span class="line">    listeners.contextLoaded(context);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>AbstractApplicationContext</code>的<code>refresh()</code>方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">refresh</span><span class="params">()</span> <span class="keyword">throws</span> BeansException, IllegalStateException </span>&#123;</span><br><span class="line">    <span class="keyword">synchronized</span> (<span class="keyword">this</span>.startupShutdownMonitor) &#123;</span><br><span class="line">        <span class="comment">// Prepare this context for refreshing.</span></span><br><span class="line">        prepareRefresh();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// Tell the subclass to refresh the internal bean factory.</span></span><br><span class="line">        ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// Prepare the bean factory for use in this context.</span></span><br><span class="line">        prepareBeanFactory(beanFactory);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// Allows post-processing of the bean factory in context subclasses.</span></span><br><span class="line">            postProcessBeanFactory(beanFactory);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// Invoke factory processors registered as beans in the context.</span></span><br><span class="line">            invokeBeanFactoryPostProcessors(beanFactory);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// Register bean processors that intercept bean creation.</span></span><br><span class="line">            registerBeanPostProcessors(beanFactory);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// Initialize message source for this context.</span></span><br><span class="line">            initMessageSource();</span><br><span class="line"></span><br><span class="line">            <span class="comment">// Initialize event multicaster for this context.</span></span><br><span class="line">            initApplicationEventMulticaster();</span><br><span class="line"></span><br><span class="line">            <span class="comment">// Initialize other special beans in specific context subclasses.</span></span><br><span class="line">            onRefresh();</span><br><span class="line"></span><br><span class="line">            <span class="comment">// Check for listener beans and register them.</span></span><br><span class="line">            registerListeners();</span><br><span class="line"></span><br><span class="line">            <span class="comment">// Instantiate all remaining (non-lazy-init) singletons.</span></span><br><span class="line">            finishBeanFactoryInitialization(beanFactory);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// Last step: publish corresponding event.</span></span><br><span class="line">            finishRefresh();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">catch</span> (BeansException ex) &#123;</span><br><span class="line">            <span class="keyword">if</span> (logger.isWarnEnabled()) &#123;</span><br><span class="line">                logger.warn(<span class="string">"Exception encountered during context initialization - "</span> +</span><br><span class="line">                        <span class="string">"cancelling refresh attempt: "</span> + ex);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// Destroy already created singletons to avoid dangling resources.</span></span><br><span class="line">            destroyBeans();</span><br><span class="line"></span><br><span class="line">            <span class="comment">// Reset 'active' flag.</span></span><br><span class="line">            cancelRefresh(ex);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// Propagate exception to caller.</span></span><br><span class="line">            <span class="keyword">throw</span> ex;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">finally</span> &#123;</span><br><span class="line">            <span class="comment">// Reset common introspection caches in Spring's core, since we</span></span><br><span class="line">            <span class="comment">// might not ever need metadata for singleton beans anymore...</span></span><br><span class="line">            resetCommonCaches();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://amaodou.gitee.io/2020/05/09/dynomite%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="amaodou">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="amaodou's lab">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/09/dynomite%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/" class="post-title-link" itemprop="url">Dynomite快速入门</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-09 11:02:40 / 修改时间：20:49:24" itemprop="dateCreated datePublished" datetime="2020-05-09T11:02:40+08:00">2020-05-09</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="Dynomite-是什么"><a href="#Dynomite-是什么" class="headerlink" title="Dynomite 是什么"></a>Dynomite 是什么</h3><p>Dynomite 是受<a href="http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf" target="_blank" rel="noopener">Amazon Dynamo</a>白皮书启发，适用于不同存储引擎和协议的分布式 Dynamo 层的实现，目前已经支持<code>Redis</code>和<code>Memcached</code>。Dynomite 支持多数据中心复制，为高可用而设计的。</p>
+<p>Dynomite 的最终目标是能够在本身不提供高可用和多数据中心复制功能的存储引擎上实现这些功能，并且做到高效、简单、高性能。简单来说就是，Dynomite 可以使非分布式的<code>Redis</code>和<code>Memcached</code>变成分布式的。</p>
+<h3 id="Dynomite-使用"><a href="#Dynomite-使用" class="headerlink" title="Dynomite 使用"></a>Dynomite 使用</h3><p>既然 Dynomite 可以简单理解为对 Redis 和 Memcached 的包装，那我们在代码中可以像使用 Redis 或 Memcached 一样使用 Dynomite</p>
+<h4 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h4><blockquote>
+<p>以<code>Redis</code>作为存储引擎，创建一个单 DC，2 个 Rack，每个 Rack 2 个节点的存储环境，如下：</p>
+</blockquote>
+<p><img src="/images/dynomite-topology.png" alt="Dynomite拓补图"></p>
+<h4 id="安装配置-Redis"><a href="#安装配置-Redis" class="headerlink" title="安装配置 Redis"></a>安装配置 Redis</h4><ol>
+<li><p>安装 Redis</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line">wget http://download.redis.io/releases/redis-5.0.5.tar.gz</span><br><span class="line">tar -xvf redis-5.0.5.tar.gz</span><br><span class="line"><span class="built_in">cd</span> redis-5.0.5</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置启动 4 个 Redis 节点</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> REDIS_APP=~/apps/redis</span><br><span class="line">mkdir -p <span class="variable">$REDIS_APP</span>/&#123;conf,logs&#125;</span><br><span class="line">cat &gt; <span class="variable">$REDIS_APP</span>/conf/redis-&#123;6396,6397,6398,6399&#125;.conf &lt; ~/redis-5.0.5/redis.conf</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> conf <span class="keyword">in</span> <span class="variable">$REDIS_APP</span>/conf/redis-*.conf</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">    port=$(<span class="built_in">echo</span> $(basename <span class="variable">$conf</span>) | sed <span class="string">'s/[^0-9]//g'</span>)</span><br><span class="line">    sed -i <span class="string">"s/6379/<span class="variable">$port</span>/g"</span> <span class="variable">$conf</span></span><br><span class="line">    sed -i <span class="string">"s:^logfile .*:logfile <span class="variable">$REDIS_APP</span>/logs/<span class="variable">$port</span>\.log:g"</span> <span class="variable">$conf</span></span><br><span class="line"></span><br><span class="line">    redis-server <span class="variable">$conf</span> &amp;</span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"><span class="built_in">unset</span> REDIS_APP</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h4 id="安装配置-Dynomite"><a href="#安装配置-Dynomite" class="headerlink" title="安装配置 Dynomite"></a>安装配置 Dynomite</h4><ol>
+<li><p>源码安装 Dynomite</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">apt-get install git autoconf automake libtool openssl-devel -y</span><br><span class="line">git <span class="built_in">clone</span> git@github.com:Netflix/dynomite.git</span><br><span class="line"><span class="built_in">cd</span> dynomite</span><br><span class="line">autoreconf -fvi</span><br><span class="line">./configure --<span class="built_in">enable</span>-debug=yes  //启用debug日志</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建配置文件存放的目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> DYNOMITE_APP=~/apps/dynomite</span><br><span class="line">mkdir -p <span class="variable">$DYNOMITE_APP</span>/&#123;conf,logs&#125;</span><br></pre></td></tr></table></figure>
+
+<p>配置 Rack1 的第一个节点 8102，配置如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">cat &gt; <span class="variable">$DYNOMITE_APP</span>/conf/node-8102.yml &lt;&lt; EOF</span><br><span class="line">dyn_o_mite:</span><br><span class="line">    datacenter: dc1</span><br><span class="line">    rack: rack1</span><br><span class="line">    listen: 0.0.0.0:8102</span><br><span class="line">    dyn_listen: 0.0.0.0:8101</span><br><span class="line">    dyn_seeds:</span><br><span class="line">        - 127.0.0.1:8201:rack1:dc1:2147483647</span><br><span class="line">        - 127.0.0.1:8301:rack2:dc1:0</span><br><span class="line">        - 127.0.0.1:8401:rack2:dc1:2147483647</span><br><span class="line">    dyn_seed_provider: simple_provider</span><br><span class="line">    tokens: <span class="string">'0'</span></span><br><span class="line">    servers:</span><br><span class="line">        - 127.0.0.1:6396:1</span><br><span class="line">    data_store: 0</span><br><span class="line">    stats_listen: 127.0.0.1:33331</span><br><span class="line">    preconnect: <span class="literal">true</span></span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+
+<p>配置 Rack1 的第二个节点 8202，配置如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">cat &gt; <span class="variable">$DYNOMITE_APP</span>/conf/node-8202.yml &lt;&lt; EOF</span><br><span class="line">dyn_o_mite:</span><br><span class="line">    datacenter: dc1</span><br><span class="line">    rack: rack1</span><br><span class="line">    listen: 0.0.0.0:8202</span><br><span class="line">    dyn_listen: 0.0.0.0:8201</span><br><span class="line">    dyn_seeds:</span><br><span class="line">        - 127.0.0.1:8101:rack1:dc1:0</span><br><span class="line">        - 127.0.0.1:8301:rack2:dc1:0</span><br><span class="line">        - 127.0.0.1:8401:rack2:dc1:2147483647</span><br><span class="line">    dyn_seed_provider: simple_provider</span><br><span class="line">    tokens: <span class="string">'2147483647'</span></span><br><span class="line">    servers:</span><br><span class="line">        - 127.0.0.1:6397:1</span><br><span class="line">    data_store: 0</span><br><span class="line">    stats_listen: 127.0.0.1:33332</span><br><span class="line">    preconnect: <span class="literal">true</span></span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+
+<p>配置 Rack2 的第一个节点 8302，配置如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">cat &gt; <span class="variable">$DYNOMITE_APP</span>/conf/node-8302.yml &lt;&lt; EOF</span><br><span class="line">dyn_o_mite:</span><br><span class="line">    datacenter: dc1</span><br><span class="line">    rack: rack2</span><br><span class="line">    listen: 0.0.0.0:8302</span><br><span class="line">    dyn_listen: 0.0.0.0:8301</span><br><span class="line">    dyn_seeds:</span><br><span class="line">        - 127.0.0.1:8201:rack1:dc1:2147483647</span><br><span class="line">        - 127.0.0.1:8101:rack1:dc1:0</span><br><span class="line">        - 127.0.0.1:8401:rack2:dc1:2147483647</span><br><span class="line">    dyn_seed_provider: simple_provider</span><br><span class="line">    tokens: <span class="string">'0'</span></span><br><span class="line">    servers:</span><br><span class="line">        - 127.0.0.1:6398:1</span><br><span class="line">    data_store: 0</span><br><span class="line">    stats_listen: 127.0.0.1:33333</span><br><span class="line">    preconnect: <span class="literal">true</span></span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+
+<p>配置 Rack2 的第二个节点 8402，配置如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">cat &gt; <span class="variable">$DYNOMITE_APP</span>/conf/node-8402.yml &lt;&lt; EOF</span><br><span class="line">dyn_o_mite:</span><br><span class="line">    datacenter: dc1</span><br><span class="line">    rack: rack2</span><br><span class="line">    listen: 0.0.0.0:8402</span><br><span class="line">    dyn_listen: 0.0.0.0:8401</span><br><span class="line">    dyn_seeds:</span><br><span class="line">        - 127.0.0.1:8201:rack1:dc1:2147483647</span><br><span class="line">        - 127.0.0.1:8101:rack1:dc1:0</span><br><span class="line">        - 127.0.0.1:8301:rack2:dc1:0</span><br><span class="line">    dyn_seed_provider: simple_provider</span><br><span class="line">    tokens: <span class="string">'2147483647'</span></span><br><span class="line">    servers:</span><br><span class="line">        - 127.0.0.1:6399:1</span><br><span class="line">    data_store: 0</span><br><span class="line">    stats_listen: 127.0.0.1:33334</span><br><span class="line">    preconnect: <span class="literal">true</span></span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+
+<p>启动 Dynomite 节点</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> conf <span class="keyword">in</span> <span class="variable">$DYNOMITE_APP</span>/conf/node-*.yml</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">    port=$(<span class="built_in">echo</span> $(basename <span class="variable">$conf</span>) | sed <span class="string">'s/[^0-9]//g'</span>)</span><br><span class="line">    dynomite -c <span class="variable">$conf</span> -o <span class="variable">$DYNOMITE_APP</span>/logs/<span class="variable">$port</span>.<span class="built_in">log</span> -p <span class="variable">$DYNOMITE_APP</span>/logs/<span class="variable">$port</span>.pid -d</span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"><span class="built_in">unset</span> DYNOMITE_APP</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h4 id="配置描述"><a href="#配置描述" class="headerlink" title="配置描述"></a>配置描述</h4><ul>
+<li>datacenter 数据中心名称</li>
+<li>rack 机架名称，每个机架都包含一份完整的集群数据</li>
+<li>listen 外部访问节点的端口</li>
+<li>dyn_listen 集群内部通信使用的端口</li>
+<li>dyn_seeds 集群中的其他节点，格式 address:port:rack:dc:tokens</li>
+<li>dyn_seed_provider 提供 seed 节点列表实现</li>
+<li>tokens 用于计算每个节点管理的数据范围，每个节点只有一个 token</li>
+<li>servers 存储引擎服务（如 Redis/Memcached）地址，格式 ip:port:weight，每个节点只有一个</li>
+<li>data_store 指定使用的存储引擎 redis(0)或者 memcached(1)</li>
+<li>stats_listen 节点数据统计</li>
+<li>preconnect 是否在启动前连接所有 servers</li>
+</ul>
+<h3 id="Dynomite-测试"><a href="#Dynomite-测试" class="headerlink" title="Dynomite 测试"></a>Dynomite 测试</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">$ redis-cli -h 127.0.0.1 -p 8102</span><br><span class="line">127.0.0.1:8102&gt; <span class="built_in">set</span> test1 test1</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:8102&gt; <span class="built_in">set</span> test1111 test1111</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:8102&gt; <span class="built_in">set</span> test2 test2</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:8102&gt; <span class="built_in">set</span> test2222 test2222</span><br><span class="line">OK</span><br><span class="line">127.0.0.1:8102&gt; keys *</span><br><span class="line">1) <span class="string">"test2"</span></span><br><span class="line">2) <span class="string">"test2222"</span></span><br><span class="line">127.0.0.1:8102&gt; get test1</span><br><span class="line"><span class="string">"test1"</span></span><br><span class="line">127.0.0.1:8102&gt; get test2</span><br><span class="line"><span class="string">"test2"</span></span><br><span class="line"></span><br><span class="line">$ redis-cli -h 127.0.0.1 -p 6396</span><br><span class="line">127.0.0.1:6396&gt; keys *</span><br><span class="line">1) <span class="string">"test2"</span></span><br><span class="line">2) <span class="string">"test2222"</span></span><br><span class="line"></span><br><span class="line">$ redis-cli -h 127.0.0.1 -p 6398</span><br><span class="line">127.0.0.1:6398&gt; keys *</span><br><span class="line">1) <span class="string">"test2"</span></span><br><span class="line">2) <span class="string">"test2222"</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ul>
+<li>Dynomite 集群由一个或多个 datacenter 组成，每个 datacenter 包含一个或多个 rack，每个 rack 包含一个或多个节点。每个 rack 上的节点数量可以不相同，同理，每个 datacenter 上的 rack 数量也可以不相同；</li>
+<li>在 Dynomite 集群中，每个 rack 都存储了一份完整的集群数据；</li>
+<li>Rack 中每个节点存储的范围是从当前节点的 token 到下一个节点的 token - 1，通过一致性 Hash 算法计算 Key 的 token，将数据存储到正确的节点上；</li>
+<li>假如 Redis 节点在加入 Dynomite 集群之前已经存了一部分数据，加入集群后通过 Dynomite 可能读取不到其中一些数据，因为这些数据计算出来的 token 不在节点的管理范围内；</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://amaodou.gitee.io/2020/05/09/pxe%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="amaodou">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="amaodou's lab">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/09/pxe%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="post-title-link" itemprop="url">PXE环境搭建</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-09 11:01:46 / 修改时间：20:49:24" itemprop="dateCreated datePublished" datetime="2020-05-09T11:01:46+08:00">2020-05-09</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="准备环境"><a href="#准备环境" class="headerlink" title="准备环境"></a>准备环境</h2><ol>
+<li><p>VirtualBox 新建虚拟机安装 CentOS 7 系统，启用网卡 1 选择<code>网络地址转换(NAT)</code>连接方式、启用网卡 2 选择<code>仅Host-Only网络</code>连接方式（ip 192.168.56.105），VirtualBox 网络模式如下：</p>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>VM→Host</th>
+<th>VM←Host</th>
+<th>VM1↔VM2</th>
+<th>VM→Net/LAN</th>
+<th>VM←Net/LAN</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Host-only</td>
+<td>+</td>
+<td>+</td>
+<td>+</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Internal</td>
+<td>-</td>
+<td>-</td>
+<td>+</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Bridged</td>
+<td>+</td>
+<td>+</td>
+<td>+</td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td>NAT</td>
+<td>+</td>
+<td>Port forward</td>
+<td>-</td>
+<td>+</td>
+<td>Port forward</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>下载 CentOS 7 镜像，如 CentOS-7-x86_64-Minimal-1804.iso</p>
+</li>
+<li><p>关闭防火墙 <code>systemctl stop firewalld</code></p>
+</li>
+</ol>
+<h2 id="搭建-PXE-装机环境"><a href="#搭建-PXE-装机环境" class="headerlink" title="搭建 PXE 装机环境"></a>搭建 PXE 装机环境</h2><h3 id="挂载-CentOS-7-镜像"><a href="#挂载-CentOS-7-镜像" class="headerlink" title="挂载 CentOS 7 镜像"></a>挂载 CentOS 7 镜像</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount CentOS-7-x86_64-Minimal-1804.iso /mnt/centos7</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装配置-httpd-服务"><a href="#安装配置-httpd-服务" class="headerlink" title="安装配置 httpd 服务"></a>安装配置 httpd 服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install httpd -y</span><br></pre></td></tr></table></figure>
+
+<p>复制 centos7 镜像的所有文件到 httpd 服务目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir /var/www/html/centos7</span><br><span class="line">cp -R /mnt/centos7/* /var/www/html/centos7/</span><br></pre></td></tr></table></figure>
+
+<p>创建 kiskstart 配置文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">mkdir /var/www/html/ks</span><br><span class="line"></span><br><span class="line">cat &gt; /var/www/html/ks/ks.cfg &lt;&lt; EOF</span><br><span class="line"><span class="comment"># 安装系统</span></span><br><span class="line">install</span><br><span class="line"></span><br><span class="line">lang en_US.UTF-8</span><br><span class="line">keyboard us</span><br><span class="line"></span><br><span class="line"><span class="comment"># 系统密码</span></span><br><span class="line">rootpw --iscrypted <span class="variable">$1</span><span class="variable">$AdmTOr23</span><span class="variable">$6kQZu85whleHaSJ</span>.9xXlx.</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置网卡</span></span><br><span class="line">network  --bootproto=dhcp --device=enp0s3 --ipv6=auto --activate</span><br><span class="line">network  --bootproto=dhcp --device=enp0s8 --ipv6=auto --activate</span><br><span class="line">network  --hostname=localhost.localdomain</span><br><span class="line"></span><br><span class="line">repo --name=epel --baseurl=http://dl.fedoraproject.org/pub/epel/7/x86_64</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装完成后重启</span></span><br><span class="line">reboot</span><br><span class="line"></span><br><span class="line">auth --enableshadow --passalgo=sha512</span><br><span class="line"></span><br><span class="line"><span class="comment"># 禁用服务</span></span><br><span class="line">firewall --disabled</span><br><span class="line">selinux --disabled</span><br><span class="line">firstboot --disabled</span><br><span class="line"></span><br><span class="line">text</span><br><span class="line">cmdline</span><br><span class="line"></span><br><span class="line">timezone Asia/Shanghai</span><br><span class="line">logging --level=debug</span><br><span class="line"></span><br><span class="line"><span class="comment"># 系统分区</span></span><br><span class="line">zerombr</span><br><span class="line">bootloader --append=<span class="string">" crashkernel=auto"</span> --location=mbr --boot-drive=sda</span><br><span class="line">clearpart --all --initlabel</span><br><span class="line">part / --fstype xfs --asprimary --size 4096 --mkfsoptions=<span class="string">'-n ftype=1'</span></span><br><span class="line">part swap --asprimary --size 1024</span><br><span class="line"></span><br><span class="line">%packages</span><br><span class="line">@^minimal</span><br><span class="line">@core</span><br><span class="line"></span><br><span class="line">%end</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+
+<p>系统密码可以通过 <code>openssl passwd -1 &quot;PASSWORD&quot;</code> 生成，替换 <code>rootpw --iscrypted $1$AdmTOr23$6kQZu85whleHaSJ.9xXlx.</code></p>
+<p>启动 httpd 服务并设置开机启动</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl start httpd</span><br><span class="line">systemctl <span class="built_in">enable</span> httpd</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装配置-tftp-服务"><a href="#安装配置-tftp-服务" class="headerlink" title="安装配置 tftp 服务"></a>安装配置 tftp 服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install tftp tftp-server syslinux -y</span><br></pre></td></tr></table></figure>
+
+<p>复制引导文件、引导菜单和内核文件到 tftp 服务目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp /usr/share/syslinux/&#123;pxelinux.0,chain.c32,mboot.c32,menu.c32,memdisk&#125; /var/lib/tftpboot</span><br><span class="line">cp /mnt/centos/images/pxeboot/&#123;initrd.img,vmlinuz&#125; /var/lib/tftpboot</span><br></pre></td></tr></table></figure>
+
+<p>创建默认 pxe 引导配置</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">cat &gt; /var/lib/tftpboot/pxelinux.cfg/default &lt;&lt; EOF</span><br><span class="line">default menu.c32</span><br><span class="line">    prompt 5</span><br><span class="line">    timeout 30</span><br><span class="line">    MENU TITLE CentOS 7 PXE Menu</span><br><span class="line"></span><br><span class="line">    LABEL linux</span><br><span class="line">    MENU LABEL Install CentOS 7 x86_64</span><br><span class="line">    kernel vmlinuz</span><br><span class="line">    append initrd=initrd.img inst.repo=http://192.168.56.105/centos7 ks=http://192.168.56.105/ks/ks.cfg</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+
+<p>启动 tftp 服务并设置开机启动</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl start tftp</span><br><span class="line">systemctl <span class="built_in">enable</span> tftp</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装配置-dhcp"><a href="#安装配置-dhcp" class="headerlink" title="安装配置 dhcp"></a>安装配置 dhcp</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install dhcp -y</span><br></pre></td></tr></table></figure>
+
+<p>配置 dhcp 服务端如下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">cat &gt; /etc/dhcp/dhcpd.conf &lt;&lt; EOF</span><br><span class="line"></span><br><span class="line"><span class="comment"># tftp服务地址和pxe引导文件名称</span></span><br><span class="line">next-server 192.168.56.105;</span><br><span class="line">filename <span class="string">"pxelinux.0"</span>;</span><br><span class="line"></span><br><span class="line">default-lease-time 600;</span><br><span class="line">max-lease-time 1200;</span><br><span class="line">option domain-name <span class="string">"192.168.56.105"</span>;</span><br><span class="line">option domain-name-servers 192.168.56.105;</span><br><span class="line"></span><br><span class="line">subnet 192.168.56.0 netmask 255.255.255.0 &#123;</span><br><span class="line">    range 192.168.56.120 192.168.56.254;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+
+<p>启动 dhcp 服务并设置开机启动</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl start dhcpd</span><br><span class="line">systemctl <span class="built_in">enable</span> dhcpd</span><br></pre></td></tr></table></figure>
+
+<h2 id="pxe-安装测试"><a href="#pxe-安装测试" class="headerlink" title="pxe 安装测试"></a>pxe 安装测试</h2><ol>
+<li><p>配置主机网络管理器，修改 Host-Only 网络适配器，停用 DHCP 服务；</p>
+<p><img src="/images/vbox-dhcp.png" alt="停用DHCP服务"></p>
+</li>
+<li><p>新建虚拟电脑，内存调整为 2048MB（内存太小会安装失败），调整启动顺序（优先网络启动，不用挂载镜像），启用网卡 1 选择<code>仅Host-Only网络</code>连接方式</p>
+<p><img src="/images/boot-order.png" alt="调整启动顺序"><br><img src="/images/vbox-network.png" alt="设置网卡"><br><img src="/images/load-pxelinux.png" alt="加载pxelinux文件"><br><img src="/images/install-menu.png" alt="菜单项"></p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://amaodou.gitee.io/2020/05/09/DispatcherServlet%E8%AF%B7%E6%B1%82%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%A3%E6%9E%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="amaodou">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="amaodou's lab">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/09/DispatcherServlet%E8%AF%B7%E6%B1%82%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%A3%E6%9E%90/" class="post-title-link" itemprop="url">DispatcherServlet请求处理流程解析</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-05-09 11:00:32 / 修改时间：20:49:24" itemprop="dateCreated datePublished" datetime="2020-05-09T11:00:32+08:00">2020-05-09</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="DispatcherServlet-继承关系"><a href="#DispatcherServlet-继承关系" class="headerlink" title="DispatcherServlet 继承关系"></a>DispatcherServlet 继承关系</h2><p><img src="/images/DispatcherServlet.png" alt="Spring DispatcherServlet"></p>
+<h3 id="FrameworkServlet"><a href="#FrameworkServlet" class="headerlink" title="FrameworkServlet"></a>FrameworkServlet</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title">doGet</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span></span></span><br><span class="line"><span class="function">        <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line"></span><br><span class="line">    processRequest(request, response);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title">processRequest</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span></span></span><br><span class="line"><span class="function">        <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">long</span> startTime = System.currentTimeMillis();</span><br><span class="line">    Throwable failureCause = <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">    LocaleContext previousLocaleContext = LocaleContextHolder.getLocaleContext();</span><br><span class="line">    LocaleContext localeContext = buildLocaleContext(request);</span><br><span class="line"></span><br><span class="line">    RequestAttributes previousAttributes = RequestContextHolder.getRequestAttributes();</span><br><span class="line">    ServletRequestAttributes requestAttributes = buildRequestAttributes(request, response, previousAttributes);</span><br><span class="line"></span><br><span class="line">    WebAsyncManager asyncManager = WebAsyncUtils.getAsyncManager(request);</span><br><span class="line">    asyncManager.registerCallableInterceptor(FrameworkServlet<span class="class">.<span class="keyword">class</span>.<span class="title">getName</span>(), <span class="title">new</span> <span class="title">RequestBindingInterceptor</span>())</span>;</span><br><span class="line"></span><br><span class="line">    initContextHolders(request, localeContext, requestAttributes);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 上面都是一些准备工作，重点看doService方法；doService是一个抽象方法，由子类实现并处理request请求</span></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        doService(request, response);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 省略了catch和finally相关代码</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="DispatcherServlet"><a href="#DispatcherServlet" class="headerlink" title="DispatcherServlet"></a>DispatcherServlet</h3><p>DispatcherServlet 实现了 doService方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doService</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">    <span class="comment">// Make framework objects available to handlers and view objects.</span></span><br><span class="line">    request.setAttribute(WEB_APPLICATION_CONTEXT_ATTRIBUTE, getWebApplicationContext());</span><br><span class="line">    request.setAttribute(LOCALE_RESOLVER_ATTRIBUTE, <span class="keyword">this</span>.localeResolver);</span><br><span class="line">    request.setAttribute(THEME_RESOLVER_ATTRIBUTE, <span class="keyword">this</span>.themeResolver);</span><br><span class="line">    request.setAttribute(THEME_SOURCE_ATTRIBUTE, getThemeSource());</span><br><span class="line"></span><br><span class="line">    FlashMap inputFlashMap = <span class="keyword">this</span>.flashMapManager.retrieveAndUpdate(request, response);</span><br><span class="line">    <span class="keyword">if</span> (inputFlashMap != <span class="keyword">null</span>) &#123;</span><br><span class="line">        request.setAttribute(INPUT_FLASH_MAP_ATTRIBUTE, Collections.unmodifiableMap(inputFlashMap));</span><br><span class="line">    &#125;</span><br><span class="line">    request.setAttribute(OUTPUT_FLASH_MAP_ATTRIBUTE, <span class="keyword">new</span> FlashMap());</span><br><span class="line">    request.setAttribute(FLASH_MAP_MANAGER_ATTRIBUTE, <span class="keyword">this</span>.flashMapManager);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 上面设置request的一些属性，重点看doDispatch方法</span></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        doDispatch(request, response);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 省略了catch和finally相关代码</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doDispatch</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">    HttpServletRequest processedRequest = request;</span><br><span class="line">    HandlerExecutionChain mappedHandler = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">boolean</span> multipartRequestParsed = <span class="keyword">false</span>;</span><br><span class="line"></span><br><span class="line">    WebAsyncManager asyncManager = WebAsyncUtils.getAsyncManager(request);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        ModelAndView mv = <span class="keyword">null</span>;</span><br><span class="line">        Exception dispatchException = <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            processedRequest = checkMultipart(request);</span><br><span class="line">            multipartRequestParsed = (processedRequest != request);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 从handlerMappings找到处理request的处理器handler</span></span><br><span class="line">            mappedHandler = getHandler(processedRequest);</span><br><span class="line">            <span class="keyword">if</span> (mappedHandler == <span class="keyword">null</span> || mappedHandler.getHandler() == <span class="keyword">null</span>) &#123;</span><br><span class="line">                <span class="comment">// 没有找到对应的处理器，返回404状态</span></span><br><span class="line">                noHandlerFound(processedRequest, response);</span><br><span class="line">                <span class="keyword">return</span>;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 从handlerAdapters找到支持handler的HandlerAdapter</span></span><br><span class="line">            HandlerAdapter ha = getHandlerAdapter(mappedHandler.getHandler());</span><br><span class="line"></span><br><span class="line">            <span class="comment">// Process last-modified header, if supported by the handler.</span></span><br><span class="line">            String method = request.getMethod();</span><br><span class="line">            <span class="keyword">boolean</span> isGet = <span class="string">"GET"</span>.equals(method);</span><br><span class="line">            <span class="keyword">if</span> (isGet || <span class="string">"HEAD"</span>.equals(method)) &#123;</span><br><span class="line">                <span class="keyword">long</span> lastModified = ha.getLastModified(request, mappedHandler.getHandler());</span><br><span class="line">                <span class="keyword">if</span> (logger.isDebugEnabled()) &#123;</span><br><span class="line">                    logger.debug(<span class="string">"Last-Modified value for ["</span> + getRequestUri(request) + <span class="string">"] is: "</span> + lastModified);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (<span class="keyword">new</span> ServletWebRequest(request, response).checkNotModified(lastModified) &amp;&amp; isGet) &#123;</span><br><span class="line">                    <span class="keyword">return</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 请求处理之前，调用拦截器的preHandle方法预处理，一般是权限验证，如果返回false，结束请求</span></span><br><span class="line">            <span class="keyword">if</span> (!mappedHandler.applyPreHandle(processedRequest, response)) &#123;</span><br><span class="line">                <span class="keyword">return</span>;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 调用AnnotationMethodHandlerAdapter的handler方法处理request请求，返回ModelAndView</span></span><br><span class="line">            mv = ha.handle(processedRequest, response, mappedHandler.getHandler());</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> (asyncManager.isConcurrentHandlingStarted()) &#123;</span><br><span class="line">                <span class="keyword">return</span>;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            applyDefaultViewName(processedRequest, mv);</span><br><span class="line">            <span class="comment">// 请求处理之后渲染页面之前，调用拦截器的postHandle方法</span></span><br><span class="line">            mappedHandler.applyPostHandle(processedRequest, response, mv);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">catch</span> (Exception ex) &#123;</span><br><span class="line">            dispatchException = ex;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 处理handler返回的结果，即渲染页面</span></span><br><span class="line">        processDispatchResult(processedRequest, response, mappedHandler, mv, dispatchException);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 省略catch和finally代码块</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">processDispatchResult</span><span class="params">(HttpServletRequest request, HttpServletResponse response,</span></span></span><br><span class="line"><span class="function"><span class="params">        HandlerExecutionChain mappedHandler, ModelAndView mv, Exception exception)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">boolean</span> errorView = <span class="keyword">false</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 处理异常情况，自定义的异常处理类可以参考DefaultHandlerExceptionResolver</span></span><br><span class="line">    <span class="keyword">if</span> (exception != <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (exception <span class="keyword">instanceof</span> ModelAndViewDefiningException) &#123;</span><br><span class="line">            logger.debug(<span class="string">"ModelAndViewDefiningException encountered"</span>, exception);</span><br><span class="line">            mv = ((ModelAndViewDefiningException) exception).getModelAndView();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            Object handler = (mappedHandler != <span class="keyword">null</span> ? mappedHandler.getHandler() : <span class="keyword">null</span>);</span><br><span class="line">            mv = processHandlerException(request, response, handler, exception);</span><br><span class="line">            errorView = (mv != <span class="keyword">null</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 渲染页面，通过视图名称进行视图解析</span></span><br><span class="line">    <span class="keyword">if</span> (mv != <span class="keyword">null</span> &amp;&amp; !mv.wasCleared()) &#123;</span><br><span class="line">        render(mv, request, response);</span><br><span class="line">        <span class="keyword">if</span> (errorView) &#123;</span><br><span class="line">            WebUtils.clearErrorRequestAttributes(request);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (logger.isDebugEnabled()) &#123;</span><br><span class="line">            logger.debug(<span class="string">"Null ModelAndView returned to DispatcherServlet with name '"</span> + getServletName() +</span><br><span class="line">                    <span class="string">"': assuming HandlerAdapter completed request handling"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (WebAsyncUtils.getAsyncManager(request).isConcurrentHandlingStarted()) &#123;</span><br><span class="line">        <span class="comment">// Concurrent handling started during a forward</span></span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 调用拦截器的afterCompletion，一般是处理资源回收操作</span></span><br><span class="line">    <span class="keyword">if</span> (mappedHandler != <span class="keyword">null</span>) &#123;</span><br><span class="line">        mappedHandler.triggerAfterCompletion(request, response, <span class="keyword">null</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">render</span><span class="params">(ModelAndView mv, HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">    <span class="comment">// Determine locale for request and apply it to the response.</span></span><br><span class="line">    Locale locale = <span class="keyword">this</span>.localeResolver.resolveLocale(request);</span><br><span class="line">    response.setLocale(locale);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 根据视图名称解析成视图对象，例如：视图解析器FreeMarkerViewResolver将视图名解析成FreeMarkerView并完成FreeMarkerView的初始化操作，设置FreeMarkerConfig</span></span><br><span class="line">    View view;</span><br><span class="line">    <span class="keyword">if</span> (mv.isReference()) &#123;</span><br><span class="line">        <span class="comment">// We need to resolve the view name.</span></span><br><span class="line">        view = resolveViewName(mv.getViewName(), mv.getModelInternal(), locale, request);</span><br><span class="line">        <span class="keyword">if</span> (view == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> ServletException(<span class="string">"Could not resolve view with name '"</span> + mv.getViewName() +</span><br><span class="line">                    <span class="string">"' in servlet with name '"</span> + getServletName() + <span class="string">"'"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">// No need to lookup: the ModelAndView object contains the actual View object.</span></span><br><span class="line">        view = mv.getView();</span><br><span class="line">        <span class="keyword">if</span> (view == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> ServletException(<span class="string">"ModelAndView ["</span> + mv + <span class="string">"] neither contains a view name nor a "</span> +</span><br><span class="line">                    <span class="string">"View object in servlet with name '"</span> + getServletName() + <span class="string">"'"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Delegate to the View object for rendering.</span></span><br><span class="line">    <span class="keyword">if</span> (logger.isDebugEnabled()) &#123;</span><br><span class="line">        logger.debug(<span class="string">"Rendering view ["</span> + view + <span class="string">"] in DispatcherServlet with name '"</span> + getServletName() + <span class="string">"'"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// 视图对象执行渲染操作</span></span><br><span class="line">        view.render(mv.getModelInternal(), request, response);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">catch</span> (Exception ex) &#123;</span><br><span class="line">        <span class="keyword">if</span> (logger.isDebugEnabled()) &#123;</span><br><span class="line">            logger.debug(<span class="string">"Error rendering view ["</span> + view + <span class="string">"] in DispatcherServlet with name '"</span> +</span><br><span class="line">                    getServletName() + <span class="string">"'"</span>, ex);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">throw</span> ex;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="AbstractView"><a href="#AbstractView" class="headerlink" title="AbstractView"></a>AbstractView</h3><p>下面解析视图渲染过程，实际是 renderMergedOutputModel 方法进行渲染，这是一个抽象方法，由子类实现</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">render</span><span class="params">(Map&lt;String, ?&gt; model, HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (logger.isTraceEnabled()) &#123;</span><br><span class="line">        logger.trace(<span class="string">"Rendering view with name '"</span> + <span class="keyword">this</span>.beanName + <span class="string">"' with model "</span> + model +</span><br><span class="line">            <span class="string">" and static attributes "</span> + <span class="keyword">this</span>.staticAttributes);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 合并属性</span></span><br><span class="line">    Map&lt;String, Object&gt; mergedModel = createMergedOutputModel(model, request, response);</span><br><span class="line">    prepareResponse(request, response);</span><br><span class="line">    renderMergedOutputModel(mergedModel, getRequestToExpose(request), response);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">renderMergedOutputModel</span><span class="params">(</span></span></span><br><span class="line"><span class="function"><span class="params">        Map&lt;String, Object&gt; model, HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> Exception</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="AbstractTemplateView"><a href="#AbstractTemplateView" class="headerlink" title="AbstractTemplateView"></a>AbstractTemplateView</h3><p>AbstractTemplateView 是 AbstractView 的一个子类，实现了 renderMergedOutputModel 方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title">renderMergedOutputModel</span><span class="params">(</span></span></span><br><span class="line"><span class="function"><span class="params">        Map&lt;String, Object&gt; model, HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 将RequestContext添加到model中，默认添加</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.exposeSpringMacroHelpers) &#123;</span><br><span class="line">        <span class="keyword">if</span> (model.containsKey(SPRING_MACRO_REQUEST_CONTEXT_ATTRIBUTE)) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> ServletException(</span><br><span class="line">                    <span class="string">"Cannot expose bind macro helper '"</span> + SPRING_MACRO_REQUEST_CONTEXT_ATTRIBUTE +</span><br><span class="line">                    <span class="string">"' because of an existing model object of the same name"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// Expose RequestContext instance for Spring macros.</span></span><br><span class="line">        model.put(SPRING_MACRO_REQUEST_CONTEXT_ATTRIBUTE,</span><br><span class="line">                <span class="keyword">new</span> RequestContext(request, response, getServletContext(), model));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 设置response的contentType</span></span><br><span class="line">    applyContentType(response);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 抽象方法，由子类实现</span></span><br><span class="line">    renderMergedTemplateModel(model, request, response);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">renderMergedTemplateModel</span><span class="params">(</span></span></span><br><span class="line"><span class="function"><span class="params">            Map&lt;String, Object&gt; model, HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> Exception</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="FreeMarkerView"><a href="#FreeMarkerView" class="headerlink" title="FreeMarkerView"></a>FreeMarkerView</h3><p>FreeMarkerView 是 AbstractTemplateView 的一个子类，负责视图解析</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">renderMergedTemplateModel</span><span class="params">(</span></span></span><br><span class="line"><span class="function"><span class="params">        Map&lt;String, Object&gt; model, HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 可以在这里执行一些帮助操作，FreeMarkerView中此方法为空</span></span><br><span class="line">    exposeHelpers(model, request);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// FreeMarkerView执行渲染</span></span><br><span class="line">    doRender(model, request, response);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doRender</span><span class="params">(Map&lt;String, Object&gt; model, HttpServletRequest request, HttpServletResponse response)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">    <span class="comment">// 这里遍历model中的key-value，添加到request的属性中</span></span><br><span class="line">    exposeModelAsRequestAttributes(model, request);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Expose all standard FreeMarker hash models.</span></span><br><span class="line">    SimpleHash fmModel = buildTemplateModel(model, request, response);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (logger.isDebugEnabled()) &#123;</span><br><span class="line">        logger.debug(<span class="string">"Rendering FreeMarker template ["</span> + getUrl() + <span class="string">"] in FreeMarkerView '"</span> + getBeanName() + <span class="string">"'"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// Grab the locale-specific version of the template.</span></span><br><span class="line">    Locale locale = RequestContextUtils.getLocale(request);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 将FreeMarker模板处理结果响应到response</span></span><br><span class="line">    processTemplate(getTemplate(locale), fmModel, response);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">processTemplate</span><span class="params">(Template template, SimpleHash model, HttpServletResponse response)</span></span></span><br><span class="line"><span class="function">        <span class="keyword">throws</span> IOException, TemplateException </span>&#123;</span><br><span class="line"></span><br><span class="line">    template.process(model, response.getWriter());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>接下来就看到 FreeMarker 核心的 API 了，通过 Configuration 创建 template</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Configuration cfg = <span class="keyword">new</span> Configuration();</span><br><span class="line">...</span><br><span class="line">Template myTemplate = cfg.getTemplate(<span class="string">"myTemplate.html"</span>);</span><br></pre></td></tr></table></figure>
+
+<h4 id="freemarker-template-Template"><a href="#freemarker-template-Template" class="headerlink" title="freemarker.template.Template"></a>freemarker.template.Template</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">process</span><span class="params">(Object rootMap, Writer out)</span></span></span><br><span class="line"><span class="function"><span class="keyword">throws</span> TemplateException, IOException</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    createProcessingEnvironment(rootMap, out, <span class="keyword">null</span>).process();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="freemarker-core-Environment"><a href="#freemarker-core-Environment" class="headerlink" title="freemarker.core.Environment"></a>freemarker.core.Environment</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">process</span><span class="params">()</span> <span class="keyword">throws</span> TemplateException, IOException </span>&#123;</span><br><span class="line">    Object savedEnv = threadEnv.get();</span><br><span class="line">    threadEnv.set(<span class="keyword">this</span>);</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// Cached values from a previous execution are possibly outdated.</span></span><br><span class="line">        clearCachedValues();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 自动导入freemarker.properties中的auto_import和auto_include</span></span><br><span class="line">            doAutoImportsAndIncludes(<span class="keyword">this</span>);</span><br><span class="line">            visit(getTemplate().getRootTreeNode());</span><br><span class="line">            <span class="comment">// It's here as we must not flush if there was an exception.</span></span><br><span class="line">            <span class="keyword">if</span> (getAutoFlush()) &#123;</span><br><span class="line">                out.flush();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            <span class="comment">// It's just to allow the GC to free memory...</span></span><br><span class="line">            clearCachedValues();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        threadEnv.set(savedEnv);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h3><p>一个 FreeMarker 解析 ftl 模板的示例，其中，hello.ftl 是 ftl 模板，hello.html 是最终解析成 html 的文件</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">Configuration configuration = <span class="keyword">new</span> Configuration();</span><br><span class="line">File outFile = <span class="keyword">null</span>;</span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    configuration.setDirectoryForTemplateLoading(<span class="keyword">new</span> File(<span class="string">"/WEB-INF/ftl/template"</span>));</span><br><span class="line">    Template template = configuration.getTemplate(<span class="string">"hello.ftl"</span>);</span><br><span class="line"></span><br><span class="line">    outFile = <span class="keyword">new</span> File(<span class="string">"hello.html"</span>);</span><br><span class="line">    FileOutputStream fileOutputStream = <span class="keyword">new</span> FileOutputStream(outFile);</span><br><span class="line">    OutputStreamWriter writer = <span class="keyword">new</span> OutputStreamWriter(fileOutputStream, <span class="string">"UTF-8"</span>);</span><br><span class="line"></span><br><span class="line">    MapModel mapModel = <span class="keyword">new</span> MapModel(dataMap, <span class="keyword">new</span> BeansWrapper());</span><br><span class="line">    template.process(mapModel, writer);</span><br><span class="line">    writer.close();</span><br><span class="line">    fileOutputStream.close();</span><br><span class="line">&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">    LOGGER.info(e.getMessage(), e);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://amaodou.gitee.io/2020/05/08/tomcat%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="amaodou">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="amaodou's lab">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/08/tomcat%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">Tomcat笔记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-08 23:28:27" itemprop="dateCreated datePublished" datetime="2020-05-08T23:28:27+08:00">2020-05-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-09 20:49:24" itemprop="dateModified" datetime="2020-05-09T20:49:24+08:00">2020-05-09</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Tomcat-整体结构"><a href="#Tomcat-整体结构" class="headerlink" title="Tomcat 整体结构"></a>Tomcat 整体结构</h2><p><img src="/images/tomcat%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84.png" alt="Tomcat"></p>
+<h3 id="Server"><a href="#Server" class="headerlink" title="Server"></a>Server</h3><p>一个Server可以包含多个Service</p>
+<h4 id="Service"><a href="#Service" class="headerlink" title="Service"></a>Service</h4><p>一个Service由多个Connector和一个Container组成，可以包含共享的线程池</p>
+<h5 id="Connector"><a href="#Connector" class="headerlink" title="Connector"></a>Connector</h5><p>Tomcat的连接器，负责接收请求，并将请求交给Container处理</p>
+<ul>
+<li><p>Endpoint</p>
+<p>负责监听Socket连接，建立TCP 3次握手，并将Socket连接交给Processor处理</p>
+</li>
+<li><p>Processor</p>
+<p>接收Socket读取输入流，封装Tomcat自身的Request和Response，将Request和Response交给CoyoteAdapter处理</p>
+</li>
+<li><p>ProtocolHandler</p>
+<p>处理协议和IO，Tomcat提供6个实现类：AjpNioProtocol，AjpAprProtocol，AjpNio2Protocol，Http11NioProtocol，Http11Nio2Protocol，Http11AprProtocol，一般使用Http11NioProtocol</p>
+</li>
+<li><p>Adapter</p>
+<p>实现类CoyoteAdapter，将不同协议的请求内容适配成标准的HttpServletRequest和HttpServletResponse，再交给Container处理</p>
+</li>
+</ul>
+<h5 id="Container"><a href="#Container" class="headerlink" title="Container"></a>Container</h5><p>Servlet容器，负责加载和管理Servlet，将请求交给具体的Servlet处理</p>
+<ul>
+<li><p>Engine</p>
+<p>Servlet容器引擎，一个Engine管理多个Host，负责将请求发送到对应的Host处理</p>
+</li>
+<li><p>Host</p>
+<p>表示虚拟主机，一个Host可以包含多个Context，负责将请求发送到对应的Context处理</p>
+</li>
+<li><p>Context</p>
+<p>表示一个web应用，一个Context可以包含多个Wrapper，负责将请求发送到对应的Wrapper处理</p>
+</li>
+<li><p>Wrapper</p>
+<p>表示一个Servlet，最终调用Servlet.service方法</p>
+</li>
+</ul>
+<h3 id="Tomcat启动流程"><a href="#Tomcat启动流程" class="headerlink" title="Tomcat启动流程"></a>Tomcat启动流程</h3><p><img src="/images/tomcat%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B.png" alt="Tomcat启动流程"></p>
+<h3 id="Tomcat请求处理流程"><a href="#Tomcat请求处理流程" class="headerlink" title="Tomcat请求处理流程"></a>Tomcat请求处理流程</h3><p><img src="/images/tomcat%E8%AF%B7%E6%B1%82%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B.png" alt="Tomcat请求处理流程"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">amaodou</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">amaodou</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
