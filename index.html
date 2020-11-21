@@ -158,6 +158,217 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://amaodou.gitee.io/2020/11/21/MySQL%E9%AB%98%E5%8F%AF%E7%94%A8%E6%9E%B6%E6%9E%84%E6%90%AD%E5%BB%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="amaodou">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="amaodou's lab">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/11/21/MySQL%E9%AB%98%E5%8F%AF%E7%94%A8%E6%9E%B6%E6%9E%84%E6%90%AD%E5%BB%BA/" class="post-title-link" itemprop="url">MySQL高可用架构搭建</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-11-21 10:23:32" itemprop="dateCreated datePublished" datetime="2020-11-21T10:23:32+08:00">2020-11-21</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://amaodou.gitee.io/2020/07/10/initrd%E6%A6%82%E8%BF%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="amaodou">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="amaodou's lab">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/10/initrd%E6%A6%82%E8%BF%B0/" class="post-title-link" itemprop="url">initrd概述</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-10 15:03:30" itemprop="dateCreated datePublished" datetime="2020-07-10T15:03:30+08:00">2020-07-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-24 22:01:14" itemprop="dateModified" datetime="2020-07-24T22:01:14+08:00">2020-07-24</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="initrd-是什么"><a href="#initrd-是什么" class="headerlink" title="initrd 是什么"></a>initrd 是什么</h2><p>initrd(initial ram disk)是在实际根文件系统可用之前挂载到系统中的一个初始根文件系统，它包含了必要的可执行程序和系统文件，例如将内核模块加载到内存中使用的 insmod 工具。initrd 与内核绑定在一起，作为内核引导过程的一部分进行加载，通过 initrd 加载一些必要的模块，这样才能稍后挂载真正的根文件系统。</p>
+<blockquote>
+<p>linux 内核在初始化完成后会执行 init 进程，而 init 进程会挂载我们的根文件系统，但由于 init 程序也是在根文件系统上的，所以就有了悖论。为了解决这个问题，linux 2.6 之前除了内核 vmlinuz 之外还有一个独立的 initrd.img（其实就是一个文件系统映像），linux 内核初始化后会挂载 initrd.img 作为一个临时的根文件系统，而 init 程序就在 initrd.img 中，然后 init 进程会挂载真正的根文件系统。linux 2.6 采用 initramfs(initial ram filesystem)，它是一个 cpio 格式的内存文件系统。</p>
+</blockquote>
+<p>linux 内核启动 init 程序有两种方案：</p>
+<ol>
+<li>ramdisk，把一块内存（ram）当做磁盘（disk）去挂载，然后找到 init 程序并执行（initrd 就是 ramdisk 的实现）</li>
+<li>ramfs，直接在内存（ram）上挂载文件系统（fs），然后执行文件系统中的 init 程序（initramfs 就是 ramfs 的实现）</li>
+</ol>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/07/10/initrd%E6%A6%82%E8%BF%B0/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://amaodou.gitee.io/2020/07/07/vscode-%E5%AE%89%E8%A3%85-Settings-Sync-%E6%8F%92%E4%BB%B6%E5%90%8C%E6%AD%A5%E8%AE%BE%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="amaodou">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="amaodou's lab">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/07/07/vscode-%E5%AE%89%E8%A3%85-Settings-Sync-%E6%8F%92%E4%BB%B6%E5%90%8C%E6%AD%A5%E8%AE%BE%E7%BD%AE/" class="post-title-link" itemprop="url">vscode 安装 Settings Sync 插件同步设置</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-07 13:01:57" itemprop="dateCreated datePublished" datetime="2020-07-07T13:01:57+08:00">2020-07-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-24 22:01:14" itemprop="dateModified" datetime="2020-07-24T22:01:14+08:00">2020-07-24</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="github-生成-Access-Token"><a href="#github-生成-Access-Token" class="headerlink" title="github 生成 Access Token"></a>github 生成 Access Token</h3><ol>
+<li><p>登录 github 进入<code>Settings / Developer settings</code>配置界面，点击<code>Generate new token</code></p>
+<p><img src="/images/vscode/github_developer_settings.png" alt="github_developer_settings"></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/07/07/vscode-%E5%AE%89%E8%A3%85-Settings-Sync-%E6%8F%92%E4%BB%B6%E5%90%8C%E6%AD%A5%E8%AE%BE%E7%BD%AE/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://amaodou.gitee.io/2020/06/03/%E5%86%99%E4%BA%86%E4%B8%80%E4%B8%AA%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -181,10 +392,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-06-03 18:37:08 / 修改时间：22:03:35" itemprop="dateCreated datePublished" datetime="2020-06-03T18:37:08+08:00">2020-06-03</time>
+              <time title="创建时间：2020-06-03 18:37:08" itemprop="dateCreated datePublished" datetime="2020-06-03T18:37:08+08:00">2020-06-03</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-24 22:01:14" itemprop="dateModified" datetime="2020-07-24T22:01:14+08:00">2020-07-24</time>
+              </span>
 
           
 
@@ -199,7 +416,7 @@
       
           <p>归并排序的思路是将待排序的数据拆分成一个个小的数组，对数组排序，然后再将这些排序后的数组合并；</p>
 <p>拆分：递归将原数组拆分成 2 个小数组（二分法），直到每个小数组长度为 1；<br>合并：使用两个指针分别指向左右两个数组起始位置，比较指针指向的数字，将小的数字保存到临时数组中并且指向小的数字的指针向后移动；最后临时数组中的数据写回到原数组（临时数组有序）；</p>
-<p><img src="/images/merge_sort.png" alt="merge_sort"></p>
+<p><img src="/images/java/merge_sort.png" alt="merge_sort"></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/06/03/%E5%86%99%E4%BA%86%E4%B8%80%E4%B8%AA%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F/#more" rel="contents">
@@ -482,7 +699,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-10 18:03:29" itemprop="dateModified" datetime="2020-05-10T18:03:29+08:00">2020-05-10</time>
+                <time title="修改时间：2020-07-24 22:01:14" itemprop="dateModified" datetime="2020-07-24T22:01:14+08:00">2020-07-24</time>
               </span>
 
           
@@ -500,7 +717,7 @@
 <h3 id="定义字符串"><a href="#定义字符串" class="headerlink" title="定义字符串"></a>定义字符串</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String s = <span class="string">"abcd"</span>;</span><br></pre></td></tr></table></figure>
 
 <p>s 存储了字符串对象”abcd”的引用，也可以理解为 s 指向字符串对象”abcd”。</p>
-<p><img src="/images/reference_new_string.jpeg" alt="reference new string"></p>
+<p><img src="/images/java/reference_new_string.jpeg" alt="reference new string"></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/05/09/%E5%9B%BE%E8%A7%A3string%E7%9A%84%E4%B8%8D%E5%8F%AF%E5%8F%98%E6%80%A7/#more" rel="contents">
@@ -630,7 +847,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-10 18:03:39" itemprop="dateModified" datetime="2020-05-10T18:03:39+08:00">2020-05-10</time>
+                <time title="修改时间：2020-07-24 22:01:14" itemprop="dateModified" datetime="2020-07-24T22:01:14+08:00">2020-07-24</time>
               </span>
 
           
@@ -649,268 +866,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/05/09/dynomite%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://amaodou.gitee.io/2020/05/09/pxe%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="amaodou">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="amaodou's lab">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/09/pxe%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" class="post-title-link" itemprop="url">PXE环境搭建</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-09 11:01:46" itemprop="dateCreated datePublished" datetime="2020-05-09T11:01:46+08:00">2020-05-09</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-10 18:04:11" itemprop="dateModified" datetime="2020-05-10T18:04:11+08:00">2020-05-10</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="准备环境"><a href="#准备环境" class="headerlink" title="准备环境"></a>准备环境</h2><ol>
-<li><p>VirtualBox 新建虚拟机安装 CentOS 7 系统，启用网卡 1 选择<code>网络地址转换(NAT)</code>连接方式、启用网卡 2 选择<code>仅Host-Only网络</code>连接方式（ip 192.168.56.105），VirtualBox 网络模式如下：</p>
-<table>
-<thead>
-<tr>
-<th>Mode</th>
-<th>VM→Host</th>
-<th>VM←Host</th>
-<th>VM1↔VM2</th>
-<th>VM→Net/LAN</th>
-<th>VM←Net/LAN</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Host-only</td>
-<td>+</td>
-<td>+</td>
-<td>+</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Internal</td>
-<td>-</td>
-<td>-</td>
-<td>+</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Bridged</td>
-<td>+</td>
-<td>+</td>
-<td>+</td>
-<td>+</td>
-<td>+</td>
-</tr>
-<tr>
-<td>NAT</td>
-<td>+</td>
-<td>Port forward</td>
-<td>-</td>
-<td>+</td>
-<td>Port forward</td>
-</tr>
-</tbody></table>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/05/09/pxe%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://amaodou.gitee.io/2020/05/09/DispatcherServlet%E8%AF%B7%E6%B1%82%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%A3%E6%9E%90/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="amaodou">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="amaodou's lab">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/09/DispatcherServlet%E8%AF%B7%E6%B1%82%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%A3%E6%9E%90/" class="post-title-link" itemprop="url">DispatcherServlet请求处理流程解析</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-09 11:00:32" itemprop="dateCreated datePublished" datetime="2020-05-09T11:00:32+08:00">2020-05-09</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-10 18:03:02" itemprop="dateModified" datetime="2020-05-10T18:03:02+08:00">2020-05-10</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="DispatcherServlet-继承关系"><a href="#DispatcherServlet-继承关系" class="headerlink" title="DispatcherServlet 继承关系"></a>DispatcherServlet 继承关系</h2><p><img src="/images/DispatcherServlet.png" alt="Spring DispatcherServlet"></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/05/09/DispatcherServlet%E8%AF%B7%E6%B1%82%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B%E8%A7%A3%E6%9E%90/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://amaodou.gitee.io/2020/05/08/tomcat%E7%AC%94%E8%AE%B0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="amaodou">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="amaodou's lab">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/08/tomcat%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">Tomcat笔记</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-05-08 23:28:27" itemprop="dateCreated datePublished" datetime="2020-05-08T23:28:27+08:00">2020-05-08</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-10 18:05:42" itemprop="dateModified" datetime="2020-05-10T18:05:42+08:00">2020-05-10</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="Tomcat-整体结构"><a href="#Tomcat-整体结构" class="headerlink" title="Tomcat 整体结构"></a>Tomcat 整体结构</h2><p><img src="/images/tomcat%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84.png" alt="Tomcat"></p>
-<h3 id="Server"><a href="#Server" class="headerlink" title="Server"></a>Server</h3><p>一个 Server 可以包含多个 Service</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/05/08/tomcat%E7%AC%94%E8%AE%B0/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -999,14 +954,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
